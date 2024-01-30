@@ -10,63 +10,41 @@
 <body>
   <script src="main.js" type="module"></script>
   <header>
-    <h1>Profissões Tech</h1>
+    <h1>Carreiras Tech
+      <img src="duvida.png" alt="ícone de mulher com dúvida." />
+    </h1>
   </header>
 
+
+  <h2>Profissões Tech</h2>
+
+  <div class="comandos">
+  <label for="filtro">Filtrar por:</label>
+  <select id="filtro" data-testid="selecionar-filtro" name="tipo">
+    <option>Escolha a categoria</option>
+    <option value="habilidadesTecnicas">Habilidades Técnicas</option>
+    <option value="formacaoSugerida">Formação Sugerida</option>
+    <option value="softSkills">Soft Skills</option>
+  </select>
+
+
+  <label for="ordenacao">Ordenar por:</label>
+  <select id="ordenacao" data-testid="selecionar-ordenar" name="tipoDeOrdem">
+    <option>Média Salarial</option>
+    <option value="asc">Do menor para o maior</option>
+    <option value="desc">Do maior para o menor</option>
+  </select>
+
+  <button id="reset-button" data-testid="botao-limpar">Limpar</button>
+</div>
+
   <main>
-    <h2>Profissões Tech (Lista de Cartões)</h2>
-
-
-    <label for="filtro">Filtrar por:</label>
-    <select id="filtro" data-testid="selecionar-filtro" name="tipo">
-      <option>Escolha a categoria</option>
-      <option value="habilidadesTecnicas">Habilidades Técnicas</option>
-      <option value="formacaoSugerida">Formação Sugerida</option>
-      <option value="softSkills">Soft Skills</option>
-    </select>
-
-
-    <select id='area' data-testid="selecionar-area" style='display:none'>
-    </select>
-
-
-    <label for="ordenacao">Ordenar por:</label>
-    <select id="ordenacao" data-testid="selecionar-ordenar" name="tipoDeOrdem">
-      <option>Média Salarial</option>
-      <option value="asc">Do menor para o maior</option>
-      <option value="desc">Do maior para o menor</option>
-
-      <select id='......' data-testid="selecionar-......" style='display:none'>
-      </select>
-
-
-      <button data-testid="botao-limpar" onclick="limparFiltros()">Limpar</button>
-
-      <div id="root">
-        <ul id="cardList">
-          <li class="profissoes">
-            <img src="URL_DA_IMAGEM_GERADA" alt="Administrador de Banco de Dados" />
-            <dl itemscope itemtype="AdministradorDeBancoDeDados">
-              <dt>Nome:</dt>
-              <dd itemprop="name">Administrador de Banco de Dados</dd>
-              <dt>Descrição:</dt>
-              <dd itemprop="description">Responsável por gerenciar e otimizar bancos de dados, garantindo integridade e
-                segurança dos dados.</dd>
-              <dt>Habilidades Técnicas:</dt>
-              <dd itemprop="techSkills">SQL, Administração de Bancos de Dados</dd>
-              <dt>Habilidades Interpessoais:</dt>
-              <dd itemprop="softSkills">Comunicação eficaz, resolução de problemas</dd>
-              <dt>Média Salarial Júnior:</dt>
-              <dd itemprop="mediaSalarialJr">R$ 6.000 (Estimativa até 2022)</dd>
-            </dl>
-          </li>
-        </ul>
-      </div>
-
-      <footer>
-        Desenvolvido por Camila Sukhada e Fabine Specian
-      </footer>
+    <div id="root">
+    </div>
   </main>
+  <footer>
+    <p>Desenvolvido por Camila Sukhada e Fabine Specian</p>
+  </footer>
 </body>
 
 </html>
