@@ -14,31 +14,30 @@
       <img src="duvida.png" alt="ícone de mulher com dúvida." />
     </h1>
   </header>
-
-
-  <h2>Profissões Tech</h2>
-
-  <div class="comandos">
-  <label for="filtro">Filtrar por:</label>
-  <select id="filtro" data-testid="selecionar-filtro" name="tipo">
-    <option>Escolha a categoria</option>
-    <option value="habilidadesTecnicas">Habilidades Técnicas</option>
-    <option value="formacaoSugerida">Formação Sugerida</option>
-    <option value="softSkills">Soft Skills</option>
-  </select>
-
-
-  <label for="ordenacao">Ordenar por:</label>
-  <select id="ordenacao" data-testid="selecionar-ordenar" name="tipoDeOrdem">
-    <option>Média Salarial</option>
-    <option value="asc">Do menor para o maior</option>
-    <option value="desc">Do maior para o menor</option>
-  </select>
-
-  <button id="reset-button" data-testid="botao-limpar">Limpar</button>
-</div>
-
   <main>
+
+    <h2>Profissões Tech</h2>
+
+    <div class="comandos">
+      <label for="filtro">Filtrar por:</label>
+      <select id="filtro" data-testid="selecionar-filtro" name="tipo">
+        <option></option>
+        <option value="habilidadesTecnicas">Habilidades Técnicas</option>
+      </select>
+
+
+      <label for="ordenacao">Ordenar por:</label>
+      <select id="ordenacao" data-testid="selecionar-ordenar" name="tipoDeOrdem">
+        <option></option>
+        <option>Média Salarial</option>
+        <option value="asc">Do menor para o maior</option>
+        <option value="desc">Do maior para o menor</option>
+      </select>
+
+      <button id="reset-button" data-testid="botao-limpar">Limpar</button>
+    </div>
+
+
     <div id="root">
     </div>
   </main>
