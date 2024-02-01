@@ -9,7 +9,7 @@ export const renderItems = (data) => {
       <dt></dt><dd itemprop="imageUrl"><img src="${item.imageUrl}" itemprop="${item.imageUrl}" alt="Profissional mulher da área da tecnologia." /> </dd>
       <dt></dt> <dd itemprop="name">${item.name}</dd>
       <dt></dt> <dd itemprop="shortDescription">${item.shortDescription}</dd>
-      <dt>Formação Sugerida:</dt> <dd itemprop="techSkills">${item.facts.formacaoSugerida}</dd>
+      <dt>Formação Sugerida:</dt> <dd itemprop="formacaoSugerida">${item.facts.formacaoSugerida}</dd>
       <dt>Tech Skills:</dt> <dd itemprop="techSkills">${item.facts.techSkills}</dd>
       <dt>Soft Skills:</dt> <dd itemprop="softSkills">${item.facts.softSkills}</dd>
       <dt>Média Salarial Júnior:</dt> <dd itemprop="mediaSalarialJr">R$ ${item.facts.mediaSalarialJr}</dd>
