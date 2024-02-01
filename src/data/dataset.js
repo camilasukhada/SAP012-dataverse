@@ -201,6 +201,7 @@ export default [
     "shortDescription": "Responsável por desenvolver soluções utilizando algoritmos de inteligência artificial e aprendizado de máquina.",
     "description": "A pessoa Engenheira de Inteligência Artificial (IA) desempenha um papel crucial na criação de sistemas e aplicações inteligentes. Trabalhando com algoritmos de IA, aprendizado de máquina e processamento de linguagem natural, desenvolve soluções inovadoras. Colaborando com cientistas de dados e desenvolvedores, a pessoa Engenheira de IA contribui para a criação de sistemas autônomos e preditivos. Sua habilidade em compreender e aplicar conceitos avançados de IA é essencial para impulsionar a inovação em diversos setores, destacando-se como peça fundamental na vanguarda da tecnologia inteligente.",
     "imageUrl": "https://github.com/FabineSpecian/SAP012-dataverse/blob/main/src/Carreiras/Engenheira%20de%20Intelig%C3%AAncia%20Artificial.jpg?raw=true",
+
     "facts": {
       "formacaoSugerida": "Ciência da Computação, Engenharia de Computação",
       "techSkills": "Machine Learning, Deep Learning, NLP",
@@ -216,6 +217,7 @@ export default [
     "shortDescription": "Responsável por desenvolver e implementar modelos de aprendizado de máquina para resolver problemas complexos.",
     "description": "A pessoa Engenheira de Machine Learning desempenha um papel muito importante na aplicação prática de algoritmos de aprendizado de máquina. Esta profissional colabora com cientistas de dados para as seguintes atividades: desenvolver, treinar e implementar modelos preditivos. Trabalhando em projetos diversos, a pessoa Engenheira de ML é fundamental para solucionar problemas complexos e extrair insights valiosos dos dados. Sua habilidade em escolher e ajustar modelos, bem como otimizar o desempenho, é vital para o sucesso na aplicação de soluções de ML em diferentes domínios.",
     "imageUrl": "https://github.com/FabineSpecian/SAP012-dataverse/blob/main/src/Carreiras/Engenheira%20de%20Machine%20Learning.jpg?raw=true",
+
     "facts": {
       "formacaoSugerida": "Ciência da Computação, Engenharia de Computação",
       "techSkills": "Machine Learning, Python, Frameworks de ML",
