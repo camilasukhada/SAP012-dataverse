@@ -5,7 +5,8 @@ export default [
     "name": "Pessoa Administradora de Banco de Dados",
     "shortDescription": "Responsável por gerenciar e otimizar bancos de dados, garantindo integridade e segurança dos dados.",
     "description": "A pessoa administradora de Banco de Dados é crucial para o funcionamento eficiente de sistemas que dependem de armazenamento e recuperação de dados. Esta profissional gerencia e ajusta bancos de dados, implementa medidas de segurança e otimiza o desempenho. Trabalhando em colaboração com desenvolvedores e analistas, o Administrador de Banco de Dados desempenha um papel essencial na garantia de que as informações vitais estejam acessíveis e seguras. Sua expertise é vital para organizações que dependem de dados para impulsionar operações e tomar decisões informadas.",
-    "imageUrl": "https://github.com/FabineSpecian/SAP012-dataverse/blob/main/src/Carreiras/Adm%20banco%20de%20dados.jpg?raw=true",
+    "imageUrl": "https://raw.githubusercontent.com/FabineSpecian/SAP012-dataverse/main/src/Carreiras/admBancoDeDados.jpg",
+    
     "facts": {
       "formacaoSugerida": "Ciência da Computação, Sistemas de Informação",
       "techSkills": "SQL, Administração de Bancos de Dados",
@@ -201,6 +202,7 @@ export default [
     "shortDescription": "Responsável por desenvolver soluções utilizando algoritmos de inteligência artificial e aprendizado de máquina.",
     "description": "A pessoa Engenheira de Inteligência Artificial (IA) desempenha um papel crucial na criação de sistemas e aplicações inteligentes. Trabalhando com algoritmos de IA, aprendizado de máquina e processamento de linguagem natural, desenvolve soluções inovadoras. Colaborando com cientistas de dados e desenvolvedores, a pessoa Engenheira de IA contribui para a criação de sistemas autônomos e preditivos. Sua habilidade em compreender e aplicar conceitos avançados de IA é essencial para impulsionar a inovação em diversos setores, destacando-se como peça fundamental na vanguarda da tecnologia inteligente.",
     "imageUrl": "https://github.com/FabineSpecian/SAP012-dataverse/blob/main/src/Carreiras/Engenheira%20de%20Intelig%C3%AAncia%20Artificial.jpg?raw=true",
+
     "facts": {
       "formacaoSugerida": "Ciência da Computação, Engenharia de Computação",
       "techSkills": "Machine Learning, Deep Learning, NLP",
@@ -216,6 +218,7 @@ export default [
     "shortDescription": "Responsável por desenvolver e implementar modelos de aprendizado de máquina para resolver problemas complexos.",
     "description": "A pessoa Engenheira de Machine Learning desempenha um papel muito importante na aplicação prática de algoritmos de aprendizado de máquina. Esta profissional colabora com cientistas de dados para as seguintes atividades: desenvolver, treinar e implementar modelos preditivos. Trabalhando em projetos diversos, a pessoa Engenheira de ML é fundamental para solucionar problemas complexos e extrair insights valiosos dos dados. Sua habilidade em escolher e ajustar modelos, bem como otimizar o desempenho, é vital para o sucesso na aplicação de soluções de ML em diferentes domínios.",
     "imageUrl": "https://github.com/FabineSpecian/SAP012-dataverse/blob/main/src/Carreiras/Engenheira%20de%20Machine%20Learning.jpg?raw=true",
+
     "facts": {
       "formacaoSugerida": "Ciência da Computação, Engenharia de Computação",
       "techSkills": "Machine Learning, Python, Frameworks de ML",
@@ -350,7 +353,7 @@ export default [
     "name": "Product Manager",
     "shortDescription": "Responsável por liderar o ciclo de vida de produtos, desde o conceito até a entrega e otimização contínua.",
     "description": "A pessoa Product Manager desempenha um papel muito estratégico no ciclo de vida de produtos, liderando desde o conceito até a entrega e otimização contínua.Esta profissional colabora com equipes multidisciplinares para definir a visão do produto, desenvolver roadmaps e garantir a satisfação dos clientes. Focando em inovação e resultados, a pessoa Product Manager busca constantemente melhorias e ajustes para maximizar o sucesso do produto no mercado.Sua habilidade em liderança, gestão estratégica e compreensão do mercado contribui para o êxito de produtos inovadores.",
-    "imageUrl": "https://github.com/FabineSpecian/SAP012-dataverse/blob/main/src/Carreiras/Product%20Manager.jpg",
+    "imageUrl": "https://raw.githubusercontent.com/FabineSpecian/SAP012-dataverse/main/src/Carreiras/Product%20Manager.jpg",
     "facts": {
       "formacaoSugerida": "Administração, Marketing, Engenharia de Produção",
       "techSkills": "Gestão de Produtos, Liderança, Visão estratégica",
