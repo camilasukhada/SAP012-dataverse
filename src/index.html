@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <link rel="stylesheet" href="style.css" />
   <title>Carreiras Tech - Dataverse</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, max-scale=1.0">
 </head>
 
 <body>
@@ -16,11 +17,11 @@
   </header>
   <main>
 
-    <h2>Profissões Tech</h2>
+    <h2>Saiba mais sobre as carreiras de tecnologia</h2>
 
-    <div class="comandos">
-      <label for="filtro">Filtrar por:</label>
-      <select id="filtro" data-testid="selecionar-filtro" name="tipo">
+    <div class="comandos flex-center">
+      <label for="filtro">Filtrar por: </label>
+      <select class="orderFilterReset" id="filtro" data-testid="selecionar-filtro" name="tipo">
         <option value="formacaoSugerida">Formação Sugerida</option>
         <option value="administracao">Administração</option>
         <option value="cienciaDaComputacao">Ciência da Computação</option>
@@ -40,21 +41,21 @@
         <option value="sistemasDeInformacao">Sistemas de Informação</option>
       </select>
 
-      <label for="ordenacao">Ordenar por:</label>
-      <select id="ordenacao" data-testid="selecionar-ordenar" name="tipoDeOrdem">
+      <label for="ordenacao">Ordenar por: </label>
+      <select class="orderFilterReset" id="ordenacao" data-testid="selecionar-ordenar" name="tipoDeOrdem">
         <option>Média Salarial</option>
-        <option value="asc">Do menor para o maior</option>
-        <option value="desc">Do maior para o menor</option>
+        <option value="asc">menor para o maior</option>
+        <option value="desc">maior para o menor</option>
       </select>
 
-      <button id="reset-button" data-testid="botao-limpar">Limpar</button>
+      <button class="orderFilterReset" id="reset-button" data-testid="botao-limpar">Limpar</button>
     </div>
 
     <div id="root">
     </div>
   </main>
   <footer>
-    <p>Desenvolvido por Camila Sukhada e Fabine Specian</p>
+    <p>Desenvolvido por Camila de Oliveira Batista de Lara e Fabine Specian</p>
   </footer>
 </body>
 
