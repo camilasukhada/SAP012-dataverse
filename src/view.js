@@ -12,7 +12,7 @@ export const renderItems = (data) => {
       <dt>Formação Sugerida:</dt> <dd class="flex-center" itemprop="formacaoSugerida">${item.facts.formacaoSugerida}</dd>
       <dt>Tech Skills:</dt> <dd class="flex-center" itemprop="techSkills">${item.facts.techSkills}</dd>
       <dt>Soft Skills:</dt> <dd class="flex-center" itemprop="softSkills">${item.facts.softSkills}</dd>
-      <dt>Média Salarial Júnior:</dt> <dd class="flex-center" itemprop="mediaSalarialJr">R$ ${item.facts.mediaSalarialJr}</dd>
+      <dt>Média Salarial Júnior:</dt> <dd class="flex-center" itemprop="sort-order">R$ ${item.facts.mediaSalarialJr}</dd>
     </dl>
   </div>
  `;
