@@ -5,7 +5,8 @@ export default [
     "name": "Pessoa Administradora de Banco de Dados",
     "shortDescription": "Responsável por gerenciar e otimizar bancos de dados, garantindo integridade e segurança dos dados.",
     "description": "A pessoa administradora de Banco de Dados é crucial para o funcionamento eficiente de sistemas que dependem de armazenamento e recuperação de dados. Esta profissional gerencia e ajusta bancos de dados, implementa medidas de segurança e otimiza o desempenho. Trabalhando em colaboração com desenvolvedores e analistas, o Administrador de Banco de Dados desempenha um papel essencial na garantia de que as informações vitais estejam acessíveis e seguras. Sua expertise é vital para organizações que dependem de dados para impulsionar operações e tomar decisões informadas.",
-    "imageUrl": "https://github.com/FabineSpecian/SAP012-dataverse/blob/main/src/Carreiras/Adm%20banco%20de%20dados.jpg?raw=true",
+    "imageUrl": "https://raw.githubusercontent.com/FabineSpecian/SAP012-dataverse/main/src/Carreiras/admBancoDeDados.jpg",
+    
     "facts": {
       "formacaoSugerida": "Ciência da Computação, Sistemas de Informação",
       "techSkills": "SQL, Administração de Bancos de Dados",
@@ -352,7 +353,7 @@ export default [
     "name": "Product Manager",
     "shortDescription": "Responsável por liderar o ciclo de vida de produtos, desde o conceito até a entrega e otimização contínua.",
     "description": "A pessoa Product Manager desempenha um papel muito estratégico no ciclo de vida de produtos, liderando desde o conceito até a entrega e otimização contínua.Esta profissional colabora com equipes multidisciplinares para definir a visão do produto, desenvolver roadmaps e garantir a satisfação dos clientes. Focando em inovação e resultados, a pessoa Product Manager busca constantemente melhorias e ajustes para maximizar o sucesso do produto no mercado.Sua habilidade em liderança, gestão estratégica e compreensão do mercado contribui para o êxito de produtos inovadores.",
-    "imageUrl": "https://github.com/FabineSpecian/SAP012-dataverse/blob/main/src/Carreiras/Product%20Manager.jpg",
+    "imageUrl": "https://raw.githubusercontent.com/FabineSpecian/SAP012-dataverse/main/src/Carreiras/Product%20Manager.jpg",
     "facts": {
       "formacaoSugerida": "Administração, Marketing, Engenharia de Produção",
       "techSkills": "Gestão de Produtos, Liderança, Visão estratégica",

@@ -71,8 +71,11 @@ describe('CSS', () => {
       const elementsLi = document.querySelectorAll('#root > ul > li');
       // all lis should have same classes since rendered dinamically
       // so not checking for common classes here
+      console.log(elementsLi);
       elementsLi.forEach((li) => {
+        console.log(li);
         const liRulesAttributes = getDeclarationsForElClasses(li);
+        console.log(liRulesAttributes);
         expect(liRulesAttributes.length).toBeGreaterThan(0);
       });
       expect.hasAssertions();
