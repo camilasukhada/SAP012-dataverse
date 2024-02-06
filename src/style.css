@@ -1,0 +1,135 @@
+
+ul, li, dd, .comandos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+header, footer{
+    background-color:#e0cede;
+    text-align: right;
+}
+
+.container_itens dd[itemprop="name"], dt {
+    font-weight: bold;
+    font-size:larger;
+    text-align: left;
+}
+
+header {
+    /* background-color: rgba(224, 206, 222, 0.36); */
+    font-size: 50px;
+    font-weight: bold;
+    height: 250px;
+    border-radius: 50px;
+}
+
+header img {
+    height: 210px;
+    width: 230px;
+    padding-top: 20px;
+    padding-right: 20px;
+}
+
+h2{
+    text-align: center;
+}
+
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #322d37;
+    font-display: flex;
+
+}
+
+main{
+  display: flexbox;  
+}
+
+.comandos {
+    padding: 20px;
+    font-size:20px;
+    color:#322d37;
+}
+select, #reset-button {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    align-items: center;
+    height: 35px;
+    cursor:pointer;
+    border-radius: 10px;
+
+}
+
+select {
+    background-color:#d9d9d926;
+    width: 170px;
+    border-style: dashed;
+    margin-right: 15px;
+    margin-left: 5px;
+
+}
+
+#reset-button {
+    background-color: #322d37;
+    color:#e0cede;
+    width: 150px;
+    border: none;
+}
+
+li.container_itens {
+    padding: 20px;
+    margin: 20px;
+    /* background-color: rgba(217, 217, 217, 0.15); */
+    background-color:#e0cede;
+    width: 300px;
+    border-radius: 50px;
+    text-align: left; 
+    
+    display: flex;
+    flex-wrap: wrap;
+}
+
+dd, dt {
+    margin: 0px;
+    margin-bottom: 10px; 
+    text-align: left;
+    
+}
+
+/* dt {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; 
+    /*se manter essas regras, colocar no início.
+} */
+
+
+dl img {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 10px;
+    margin-left: 75px;
+}
+
+.container_itens dd[itemprop="name"], .container_itens dd[itemprop="shortDescripton"] {
+    text-align: center;
+}
+
+.container_itens dd[itemprop="shortDescripton"]{
+    font-size: 30px;
+}
+
+footer {
+    /* background-color: rgba(224, 206, 222, 0.36); */
+    height: 25px;
+    align-items: center;
+    padding-right: 15px;
+   
+}
+
+/* @media (max-width:600px){
+    
+    
+} */
+
