@@ -1,8 +1,8 @@
 
-.flex-center{
+ul, li, dd, .comandos{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 header, footer{
@@ -13,6 +13,7 @@ header, footer{
 .container_itens dd[itemprop="name"], dt {
     font-weight: bold;
     font-size:larger;
+    text-align: left;
 }
 
 header {
@@ -82,12 +83,18 @@ li.container_itens {
     /* background-color: rgba(217, 217, 217, 0.15); */
     background-color:#e0cede;
     width: 300px;
-    border-radius: 50px;    
+    border-radius: 50px;
+    text-align: left; 
+    
+    display: flex;
+    flex-wrap: wrap;
 }
 
-dd {
+dd, dt {
     margin: 0px;
     margin-bottom: 10px; 
+    text-align: left;
+    
 }
 
 /* dt {
@@ -102,7 +109,15 @@ dl img {
     width: 150px;
     height: 150px;
     margin-bottom: 10px;
-    justify-content: center;
+    margin-left: 75px;
+}
+
+.container_itens dd[itemprop="name"], .container_itens dd[itemprop="shortDescripton"] {
+    text-align: center;
+}
+
+.container_itens dd[itemprop="shortDescripton"]{
+    font-size: 30px;
 }
 
 footer {
