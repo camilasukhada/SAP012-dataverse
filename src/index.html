@@ -22,7 +22,7 @@
 
     <div class="comandos flex-center">
       <label for="filtro">Filtrar por:</label>
-      <select id="filtro" data-testid="selecionar-filtro" name="tipo">
+      <select class="orderFilterReset font-size" id="filtro" data-testid="selecionar-filtro" name="tipo">
         <option value="todos|todos">Formação Sugerida</option>
         <option value="formacaoSugerida|Administração">Administração</option>
         <option value="formacaoSugerida|Ciência da Computação">Ciência da Computação</option>
@@ -42,13 +42,13 @@
       </select>
 
       <label for="ordenacao">Ordenar por: </label>
-      <select class="orderFilterReset" id="ordenacao" data-testid="selecionar-ordenar" name="tipoDeOrdem">
+      <select class="orderFilterReset font-size" id="ordenacao" data-testid="selecionar-ordenar" name="tipoDeOrdem">
         <option>Média Salarial</option>
         <option value="asc">menor para o maior</option>
         <option value="desc">maior para o menor</option>
       </select>
 
-      <button class="orderFilterReset" id="reset-button" data-testid="botao-limpar">Limpar</button>
+      <button class="orderFilterReset font-size" id="reset-button" data-testid="botao-limpar">Limpar</button>
     </div>
 
     <div id="root">
