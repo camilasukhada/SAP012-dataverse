@@ -1,9 +1,56 @@
-// Estas funciones son ejemplos, aquí puedes desarrollar tus propias funciones.
+export const filterData = (data, filterBy, value) => {
+  return data.filter(function (el) {
+    let splitValue = "";
 
-export const example = () => {
-  return 'example';
-};
+    if (filterBy === "formacaoSugerida") {
+      splitValue = el.facts.formacaoSugerida.split(", ");
+    } else if (filterBy === "techSkills") {
+      splitValue = el.facts.techSkills.split(", ");
+    }
+    
+    for (let i = 0; i < splitValue.length; i++) {
+      if (splitValue[i] === value) {
+        return true;
+      }
+    }
+    return false;
+  });
+}
 
-export const anotherExample = () => {
-  return [];
-};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*export const sortData = (data, sortBy, sortOrder) => {
+
+ 
+
+/*export sortOrder
+
+export estatística*/
