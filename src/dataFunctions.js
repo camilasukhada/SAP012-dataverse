@@ -17,9 +17,11 @@ export const filterData = (data, filterBy, value) => {
   });
 }
 
-
-
-
+export const computeStats = (data, filterBy, value) => {
+  const filteredData = filterData(data, filterBy, value);
+  const count = filteredData.length;
+  return count;
+};
 
 
 

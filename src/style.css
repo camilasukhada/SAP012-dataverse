@@ -5,7 +5,7 @@
     justify-content: center;
 }
 
-.justify-align{
+.justify-align, .estatistica{
     justify-content: center;
     text-align: center;
 }
@@ -22,7 +22,7 @@ header, footer, li.container_itens{
     background-color:#e0cede5c;
 }
 
-body, .comandos {
+body, .comandos, .estatistica {
 color: #322d37;
 }
 
@@ -36,7 +36,7 @@ li.container_itens, .comandos {
     padding: 20px;
 }
 
-header, .comandos, .container_itens dd[itemprop="name"], dt{
+header, .comandos, .container_itens dd[itemprop="name"], dt, .estatistica{
     font-weight: bold;
     margin-top: 10px;
 }
@@ -124,6 +124,7 @@ dt{
 footer {
     height: 25px;
     padding-right: 15px;
+    margin-top: 40px;
    
 }
 
