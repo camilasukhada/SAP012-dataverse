@@ -7,7 +7,7 @@ export const filterData = (data, filterBy, value) => {
     } else if (filterBy === "techSkills") {
       splitValue = el.facts.techSkills.split(", ");
     }
-    
+
     for (let i = 0; i < splitValue.length; i++) {
       if (splitValue[i] === value) {
         return true;
@@ -18,12 +18,12 @@ export const filterData = (data, filterBy, value) => {
 }
 
 export const sortData = (data, sortBy, sortOrder) => {
-  return data.sort(function(a, b) {
+  return data.sort(function (a, b) {
     const valueA = a.facts[sortBy];
     const valueB = b.facts[sortBy];
 
     if (sortOrder === "asc") {
-      if ( valueA < valueB) {
+      if (valueA < valueB) {
         return -1;
       } else if (valueA > valueB) {
         return 1;
@@ -31,7 +31,7 @@ export const sortData = (data, sortBy, sortOrder) => {
         return 0;
       }
     } else if (sortOrder === "desc") {
-      if ( valueA > valueB) {
+      if (valueA > valueB) {
         return -1;
       } else if (valueA < valueB) {
         return 1;
