@@ -41,3 +41,9 @@ export const sortData = (data, sortBy, sortOrder) => {
     }
   });
 }
+
+export const computeStats = (data, filterBy, value) => {
+  const filteredData = filterData(data, filterBy, value);
+  const count = filteredData.length;
+  return count;
+};
