@@ -11,7 +11,7 @@ export default [
       "formacaoSugerida": "Ciência da Computação, Sistemas de Informação",
       "techSkills": "SQL, Administração de Bancos de Dados",
       "softSkills": "Comunicação eficaz, Resolução de problemas",
-      "mediaSalarialJr": "R$ 6.000 (Estimativa até 2022)"
+      "mediaSalarialJr": "6.000"
     },
 
   },
@@ -26,7 +26,7 @@ export default [
       "formacaoSugerida": "Estatística, Matemática",
       "techSkills": "SQL, Power BI, Tableau",
       "softSkills": "Análise crítica, Colaboração",
-      "mediaSalarialJr": "R$ 5.500 (Estimativa até 2022)"
+      "mediaSalarialJr": "5.500"
     },
 
   },
@@ -41,7 +41,7 @@ export default [
       "formacaoSugerida": "Redes de Computadores, Engenharia de Redes",
       "techSkills": "Administração de servidores, Redes",
       "softSkills": "Resolução de problemas, Colaboração",
-      "mediaSalarialJr": "R$ 5.000 (Estimativa até 2022)"
+      "mediaSalarialJr": "5.000"
     },
 
   },
@@ -56,7 +56,7 @@ export default [
       "formacaoSugerida": "Engenharia de Software, Ciência da Computação",
       "techSkills": "Testes de software, Automação",
       "softSkills": "Atenção aos detalhes, Trabalho em equipe",
-      "mediaSalarialJr": "R$ 4.800 (Estimativa até 2022)"
+      "mediaSalarialJr": "4.800"
     },
 
   },
@@ -71,7 +71,7 @@ export default [
       "formacaoSugerida": "Segurança da Informação, Ciência da Computação",
       "techSkills": "Firewalls, Criptografia",
       "softSkills": "Pensamento analítico, Ética",
-      "mediaSalarialJr": "R$ 6.200 (Estimativa até 2022)"
+      "mediaSalarialJr": "6.200"
     },
 
   },
@@ -86,7 +86,7 @@ export default [
       "formacaoSugerida": "Engenharia de Software, Ciência da Computação",
       "techSkills": "Análise de sistemas, Programação",
       "softSkills": "Comunicação, Resolução de problemas",
-      "mediaSalarialJr": "R$ 5.200 (Estimativa até 2022)"
+      "mediaSalarialJr": "5.200"
     },
 
   },
@@ -101,7 +101,7 @@ export default [
       "formacaoSugerida": "Engenharia de Software, Ciência da Computação",
       "techSkills": "JavaScript, Node.js, HTML, CSS",
       "softSkills": "Trabalho em equipe, Pensamento analítico",
-      "mediaSalarialJr": "R$ 6.000 (Estimativa até 2022)"
+      "mediaSalarialJr": "6.000"
     },
 
   },
@@ -116,7 +116,7 @@ export default [
       "formacaoSugerida": "Engenharia de Software, Ciência da Computação",
       "techSkills": "Swift (iOS), Kotlin/Java (Android)",
       "softSkills": "Criatividade, Resolução de problemas",
-      "mediaSalarialJr": "R$ 6.200 (Estimativa até 2022)"
+      "mediaSalarialJr": "6.200"
     },
 
   },
@@ -131,7 +131,7 @@ export default [
       "formacaoSugerida": "Engenharia de Software, Ciência da Computação",
       "techSkills": "Node.js, Python, Java",
       "softSkills": "Colaboração, Pensamento analítico",
-      "mediaSalarialJr": "R$ 5.800 (Estimativa até 2022)"
+      "mediaSalarialJr": "5.800"
     },
 
   },
@@ -146,7 +146,7 @@ export default [
       "formacaoSugerida": "Design de Interface, Engenharia de Software",
       "techSkills": "HTML, CSS, JavaScript, React",
       "softSkills": "Criatividade, Trabalho em equipe",
-      "mediaSalarialJr": "R$ 5.600 (Estimativa até 2022)"
+      "mediaSalarialJr": "5.600"
     },
 
   },
@@ -161,7 +161,7 @@ export default [
       "formacaoSugerida": "Design de Interface, Design Gráfico",
       "techSkills": "Wireframing, Prototipagem, Ferramentas de design",
       "softSkills": "Empatia, Criatividade",
-      "mediaSalarialJr": "R$ 5.500 (Estimativa até 2022)"
+      "mediaSalarialJr": "5.500"
     },
 
   },
@@ -176,7 +176,7 @@ export default [
       "formacaoSugerida": "Design de Interface, Design Gráfico",
       "techSkills": "Design visual, Ferramentas de design, Prototipagem",
       "softSkills": "Criatividade, Colaboração",
-      "mediaSalarialJr": "R$ 5.200 (Estimativa até 2022)"
+      "mediaSalarialJr": "5.200"
     },
 
   },
@@ -191,7 +191,7 @@ export default [
       "formacaoSugerida": "Engenharia Elétrica, Engenharia de Computação",
       "techSkills": "Programação C, Assembly, Sistemas Embarcados",
       "softSkills": "Resolução de problemas, Pensamento analítico",
-      "mediaSalarialJr": "R$ 6.000 (Estimativa até 2022)"
+      "mediaSalarialJr": "6.000"
     },
 
   },
@@ -207,7 +207,7 @@ export default [
       "formacaoSugerida": "Ciência da Computação, Engenharia de Computação",
       "techSkills": "Machine Learning, Deep Learning, NLP",
       "softSkills": "Pensamento analítico, Inovação",
-      "mediaSalarialJr": "R$ 6.500 (Estimativa até 2022)"
+      "mediaSalarialJr": "6.500"
     },
 
   },
@@ -223,7 +223,7 @@ export default [
       "formacaoSugerida": "Ciência da Computação, Engenharia de Computação",
       "techSkills": "Machine Learning, Python, Frameworks de ML",
       "softSkills": "Pensamento analítico, Resolução de problemas",
-      "mediaSalarialJr": "R$ 6.200 (Estimativa até 2022)"
+      "mediaSalarialJr": "6.200"
     },
 
   },
@@ -238,7 +238,7 @@ export default [
       "formacaoSugerida": "Design de Jogos, Engenharia de Computação",
       "techSkills": "Unity, Unreal Engine, Desenvolvimento VR/AR",
       "softSkills": "Criatividade, Colaboração",
-      "mediaSalarialJr": "R$ 6.500 (Estimativa até 2022)"
+      "mediaSalarialJr": "6.500"
     },
 
   },
@@ -253,7 +253,7 @@ export default [
       "formacaoSugerida": "Engenharia de Software, Ciência da Computação",
       "techSkills": "Programação, Desenvolvimento de Software",
       "softSkills": "Trabalho em equipe, Comunicação",
-      "mediaSalarialJr": "R$ 6.000 (Estimativa até 2022)"
+      "mediaSalarialJr": "6.000"
     },
 
   },
@@ -268,7 +268,7 @@ export default [
       "formacaoSugerida": "Ciência da Computação, Engenharia de Computação",
       "techSkills": "UiPath, Automation Anywhere, Blue Prism",
       "softSkills": "Análise crítica, Resolução de problemas",
-      "mediaSalarialJr": "R$ 5.500 (Estimativa até 2022)"
+      "mediaSalarialJr": "5.500"
     },
 
   },
@@ -283,7 +283,7 @@ export default [
       "formacaoSugerida": "Engenharia de Computação, Ciência da Computação",
       "techSkills": "AWS, Azure, Google Cloud",
       "softSkills": "Pensamento analítico, Colaboração",
-      "mediaSalarialJr": "R$ 6.500 (Estimativa até 2022)"
+      "mediaSalarialJr": "6.500"
     },
 
   },
@@ -298,7 +298,7 @@ export default [
       "formacaoSugerida": "Design de Jogos, Engenharia de Computação",
       "techSkills": "Unity, Unreal Engine, Programação de Jogos",
       "softSkills": "Criatividade, Colaboração",
-      "mediaSalarialJr": "R$ 5.800 (Estimativa até 2022)"
+      "mediaSalarialJr": "5.800"
     },
 
   },
@@ -313,7 +313,7 @@ export default [
       "formacaoSugerida": "Engenharia de Software, Ciência da Computação",
       "techSkills": "CI/CD, Docker, Kubernetes",
       "softSkills": "Colaboração, Resolução de problemas",
-      "mediaSalarialJr": "R$ 6.200 (Estimativa até 2022)"
+      "mediaSalarialJr": "6.200"
     },
 
   },
@@ -328,7 +328,7 @@ export default [
       "formacaoSugerida": "Administração, Engenharia de Produção",
       "techSkills": "Gestão de Projetos, Comunicação, Liderança",
       "softSkills": "Comunicação, Tomada de decisão",
-      "mediaSalarialJr": "R$ 7.000 (Estimativa até 2022)"
+      "mediaSalarialJr": "7.000"
     },
 
   },
@@ -343,7 +343,7 @@ export default [
       "formacaoSugerida": "Administração, Marketing, Engenharia de Produção",
       "techSkills": "Gestão de Produtos, Priorização, Comunicação",
       "softSkills": "Visão estratégica, Tomada de decisão",
-      "mediaSalarialJr": "R$ 7.200 (Estimativa até 2022)"
+      "mediaSalarialJr": "7.200"
     },
 
   },
@@ -358,7 +358,7 @@ export default [
       "formacaoSugerida": "Administração, Marketing, Engenharia de Produção",
       "techSkills": "Gestão de Produtos, Liderança, Visão estratégica",
       "softSkills": "Comunicação, Inovação",
-      "mediaSalarialJr": "R$ 7.500 (Estimativa até 2022)"
+      "mediaSalarialJr": "7.500"
     },
 
   }
