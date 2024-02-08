@@ -48,10 +48,15 @@ ordenacao.addEventListener("change", (e) => {
 
   cardsItens.innerHTML = "";
   cardsItens.appendChild(renderItems(cardData));
-
-
-
-
 });
 
 cardsItens.appendChild(renderItems(data)); 
+
+const botaoLimpar = document.querySelector("#reset-button");
+botaoLimpar.addEventListener("click", () => {
+  cardData = [...data];
+  cardsItens.innerHTML = "";
+  filtro.value = "";
+  ordenacao.value = "";
+  cardsItens.appendChild(renderItems(data));
+})

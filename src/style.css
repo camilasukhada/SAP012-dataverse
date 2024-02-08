@@ -30,6 +30,7 @@ select, #reset-button {
     height: 35px;
     cursor:pointer;
     border-radius: 10px;
+    font-size:15px;
 }
 
 li.container_itens, .comandos {
