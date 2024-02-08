@@ -17,40 +17,27 @@ export const filterData = (data, filterBy, value) => {
   });
 }
 
+export const sortData = (data, sortBy, sortOrder) => {
+  return data.sort(function(a, b) {
+    const valueA = a.facts[sortBy];
+    const valueB = b.facts[sortBy];
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*export const sortData = (data, sortBy, sortOrder) => {
-
- 
-
-/*export sortOrder
-
-export estatística*/
+    if (sortOrder === "asc") {
+      if ( valueA < valueB) {
+        return -1;
+      } else if (valueA > valueB) {
+        return 1;
+      } else {
+        return 0;
+      }
+    } else if (sortOrder === "desc") {
+      if ( valueA > valueB) {
+        return -1;
+      } else if (valueA < valueB) {
+        return 1;
+      } else {
+        return 0;
+      }
+    }
+  });
+}
