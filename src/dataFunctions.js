@@ -8,14 +8,15 @@ export const filterData = (data, filterBy, value) => {
       splitValue = el.facts.techSkills.split(", ");
     }
 
-    for (let i = 0; i < splitValue.length; i++) {
-      if (splitValue[i] === value) {
-        return true;
-      }
-    }
-    return false;
+    // Utilizando map para criar um array de booleanos indicando se o valor está presente
+    const presenceArray = splitValue.map(item => item === value);
+
+    // Utilizando reduce para verificar se pelo menos um dos booleanos é true
+    return presenceArray.reduce((acc, currentValue) => {
+      return acc || currentValue;
+    }, false);
   });
-}
+};
 
 export const sortData = (data, sortBy, sortOrder) => {
   return data.sort(function (a, b) {
