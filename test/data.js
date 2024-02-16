@@ -10,7 +10,7 @@ export const data = [
       "formacaoSugerida": "Ciência da Computação, Sistemas de Informação",
       "techSkills": "SQL, Administração de Bancos de Dados",
       "softSkills": "Comunicação eficaz, Resolução de problemas",
-      "mediaSalarialJr": "R$ 6.000 (Estimativa até 2022)"
+      "mediaSalarialJr": "6.000"
     },
   },
 
@@ -24,7 +24,7 @@ export const data = [
       "formacaoSugerida": "Estatística, Matemática",
       "techSkills": "SQL, Power BI, Tableau",
       "softSkills": "Análise crítica, Colaboração",
-      "mediaSalarialJr": "R$ 5.500 (Estimativa até 2022)"
+      "mediaSalarialJr": "5.500"
     },
   },
 
@@ -38,7 +38,7 @@ export const data = [
       "formacaoSugerida": "Redes de Computadores, Engenharia de Redes",
       "techSkills": "Administração de servidores, Redes",
       "softSkills": "Resolução de problemas, Colaboração",
-      "mediaSalarialJr": "R$ 5.000 (Estimativa até 2022)"
+      "mediaSalarialJr": "5.000"
     },
   },
 
@@ -52,7 +52,7 @@ export const data = [
       "formacaoSugerida": "Engenharia de Software, Ciência da Computação",
       "techSkills": "Testes de software, Automação",
       "softSkills": "Atenção aos detalhes, Trabalho em equipe",
-      "mediaSalarialJr": "R$ 4.800 (Estimativa até 2022)"
+      "mediaSalarialJr": "4.800"
     },
   },
 
@@ -66,9 +66,8 @@ export const data = [
       "formacaoSugerida": "Segurança da Informação, Ciência da Computação",
       "techSkills": "Firewalls, Criptografia",
       "softSkills": "Pensamento analítico, Ética",
-      "mediaSalarialJr": "R$ 6.200 (Estimativa até 2022)"
+      "mediaSalarialJr": "6.200"
     },
   },
 
 ];
-
