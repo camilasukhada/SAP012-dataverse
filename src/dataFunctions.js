@@ -19,8 +19,20 @@ export const filterData = (data, filterBy, value) => {
 
 export const sortData = (data, sortBy, sortOrder) => {
   return data.sort(function (a, b) {
-    const valueA = a.facts[sortBy];
-    const valueB = b.facts[sortBy];
+    let valueA, valueB;
+
+    // Convertendo valores de string para números
+    if (typeof a.facts[sortBy] === 'string') {
+      valueA = parseFloat(a.facts[sortBy]);
+    } else {
+      valueA = a.facts[sortBy];
+    }
+
+    if (typeof b.facts[sortBy] === 'string') {
+      valueB = parseFloat(b.facts[sortBy]);
+    } else {
+      valueB = b.facts[sortBy];
+    }
 
     if (sortOrder === "asc") {
       if (valueA < valueB) {
