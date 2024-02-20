@@ -2,15 +2,13 @@
 
 ## Índice
 
-* [1. Resumo do projeto](#2-resumo-do-projeto)
-* [2. Funcionalidades](#4-funcionalidades)
-* [5. Considerações técnicas](#5-considerações-técnicas)
-* [6. Critérios de aceitação mínimos do projeto](#6-critérios-de-aceitação-mínimos-do-projeto)
-* [7. Edição Hacker](#7-edição-hacker)
-* [8. Objetivos de aprendizagem](#8-objetivos-de-aprendizagem)
-* [9. Dicas, guias e leituras complementares](#9-dicas-guias-e-leituras-complementares)
-* [10. Considerações para pedir seu Feedback do Projeto](#10-considerações-para-pedir-seu-feedback-do-projeto)
-* [11. Ferramentas utilizadas no processo](#11-ferramentas-utilizadas-no-processo)
+* [1. Resumo do projeto](#1-resumo-do-projeto)
+* [2. Ferramentas utilizadas no processo](#2-ferramentas-utilizadas-no-processo)
+* [3. Funcionalidades](#3-funcionalidades)
+* [4. Considerações técnicas](#4-considerações-técnicas)
+* [5. Objetivos de Aprendizagem](#5-objetivos-de-aprendizagem)
+* [6. Testes](#6-testes)
+* 
 
 ***
 
@@ -24,15 +22,35 @@ simples de fazer isso é criando _interfaces_ e _visualizações_.
 Neste projeto, foi **construído um _site_ para visualizar um
 _conjunto de dados_**. Para isso foi utilizado a ferramenta de inteligência artificial, o **ChatGPT** para gerar um banco de dados em um arquivo javascript, através do [prompting](https://chat.openai.com/share/ba46b56e-6b79-4fec-8b45-3b6c8f2aa134).
 
-Como entrega final, oferecemos um site responsivo que permite **visualizar os dados,
-filtrá-los, ordená-los e calcular estatísticas**. 
+Como entrega final, oferecemos um site responsivo que permite **visualizar os dados, filtrá-los, ordená-los e calcular estatísticas**, tendo esses dados relacionados com carreiras de tecnologia. 
 
 * Este projeto foi realizado em dupla por Camila Lara e Fabine Specian.
 * O tempo de conclusão do projeto foi de 6 Sprints.
 * O projeto foi publicado no [GitHub Pages](link do deploy).
 
+## 2. Ferramentas utilizadas no projeto
 
-## 4. Funcionalidades
+* 
+
+- **Visual Studio Code** - É um editor de código-fonte desenvolvido pela Microsoft para Windows, Linux e macOS. Ele inclui suporte para depuração, controle de versionamento Git incorporado, realce de sintaxe, complementação inteligente de código, snippets e refatoração de código. A escrita dos códigos ocorreu no VSCode.
+
+- **Git** - É um sistema de controle de versões distribuído, usado principalmente no desenvolvimento de software, mas pode ser usado para registrar o histórico de edições de qualquer tipo de arquivo.
+
+- **GitHub** - É uma plataforma de hospedagem de código-fonte e arquivos com controle de versão usando o Git. Ele permite que programadores, utilitários ou qualquer usuário cadastrado na plataforma contribuam em projetos privados e/ou Open Source de qualquer lugar do mundo.
+
+- **Bing** - É um mecanismo de busca criado pela Microsoft, também é uma ferramenta que gera imagens com inteligência artificial (IA) utiliza a tecnolocia do DALL-E 2 da OpenAI. Por meio dele foram geradas 24 imagens por IA relacionadas mulheres na área da tecnologia que foram utilizadas nos cards da aplicação.
+
+- **Notion** - É um aplicativo da web freemium para produtividade e anotações desenvolvido pela Notion Labs Inc. Ele oferece ferramentas organizacionais, incluindo gerenciamento de tarefas, rastreamento de projetos, listas de tarefas e marcadores. Utilizado como um importante instrumento de registro, como um diário de bordo nele foi transcrito o passo a passo do projeto.
+
+- **Trello** - É uma ferramenta visual que possibilita ao time o gerenciamento de qualquer tipo de projeto, fluxo de trabalho ou monitoramento de tarefas. É possível adicionar arquivos, checklists ou até mesmo automação: personalizar tudo para que o time trabalhe melhor. Foi a base para a organização e planejamento do backlog e gerenciamento do processo ao longo do projeto.
+
+- **ChatGPT** - É um chatbot online de inteligência artificial desenvolvido pela OpenA. O nome "ChatGPT" combina "Chat", referindo-se à sua funcionalidade de chatbot, e "GPT", que significa Generative Pre-trained Transformer, um tipo de modelo de linguagem grande. Com ele foi possível gerar os dados sobre as informações de cada uma das profissões selecionadas previamente para a aplicação.
+
+- **Canva** - É uma plataforma de design gráfico que permite aos usuários criar gráficos de mídia social, apresentações, infográficos, pôsteres e outros conteúdos visuais. Foi utilizado para a criação do protótipo de baixa fidelidade.
+
+- **Figma** - É um editor gráfico de vetor e prototipagem de projetos de design baseado principalmente no navegador web, com ferramentas offline adicionais para aplicações desktop para GNU/Linux, macOS e Windows. Utilizado para a criação do protótipo de alta fidelidade.
+
+## 3. Funcionalidades
 
 Aqui estão definidas com mais detalhes as funcionalidades que foram implementadas:
 
@@ -40,52 +58,28 @@ Aqui estão definidas com mais detalhes as funcionalidades que foram implementad
 
 * Os cartões destacam os valores das propriedades dos dados que a usuária deseja ver. Uma imagem, nome da profissão, descrição da profissão, formação sugerida, tech skills, soft skills e média salarial.
 
+* A aplicação permite à usuária filtrar os dados por formação sugerida, apresentando 15 opções de graduações.
+
 * A aplicação calcula e exibe uma estatística dos dados.
 
-* A aplicação deve permitir à usuária filtrar os dados. 
-
-* A aplicação deve permitir à usuária ordenar os dados.
+* A aplicação permite à usuária ordenar os dados. Por média salarial, é possível ordenar de forma ascendente e descendente. 
   
-* As funcionalidades de ordenação operam sobre os dados filtrados. Por exemplo, se filtrar as Profissões do tipo fogo e depois os ordenar por
-  nome de forma ascendente, a aplicação deve manter o filtro aplicado e
-  ordenar os Pokémons do tipo fogo.
+* As funcionalidades de ordenação operam sobre os dados filtrados. Por exemplo, se filtrar as profissões por formação sugerida e escolher Ciência da Comnputação, na sequência ordernar por média salarial de forma ascendente, a aplicação manterá o filtro inicial aplicado.
 
-* A aplicação deve permitir à usuária reiniciar a aplicação, limpando
-  filtros e ordenamentos, com um `<button>` com um atributo de dados
-  `data-testid="botao-limpar"`.
+* A aplicação permite à usuária reiniciar a aplicação, limpando
+  filtros e ordenamentos, com um botão Limpar.
 
-* As operações de filtrar, ordenar, limpar, etc. não devem recarregar
-  a página, mas sim adicionar conteúdo de maneira
-  dinâmica via JavaScript.
+* As operações de filtrar, ordenar, limpar, não recarregam a página, mas sim adicionam conteúdo de maneira dinâmica via JavaScript.
 
-* A aplicação será _responsiva_, ou seja, deve ser visualizada sem problemas
+* A aplicação é _responsiva_, ou seja, pode ser visualizada sem problemas
   em diferentes tamanhos de tela: celulares, tablets e desktops.
 
-Os seguintes wireframes são exemplos de uma interface que pode atender a essa
-funcionalidade. Como poderá ver, esses designs seguem a metodologia
-[Mobile First](https://developer.mozilla.org/en-US/docs/Glossary/Mobile_First),
-a mesma que recomendamos utilizar em todos os seus projetos:
+## 3. Considerações Técnicas
 
-Design Mobile:
+A lógica do projeto foi implementada completamente em JavaScript
+(ES6), HTML e CSS. Neste projeto, NÃO foi permitido usar bibliotecas ou frameworks, apenas JavaScript puro.
 
-* [Wireframe mobile 1](https://github.com/Laboratoria/curriculum/assets/123121338/54711bb7-cb05-448e-b677-3cbd9bf13c14)
-* [Wireframe mobile 2](https://github.com/Laboratoria/curriculum/assets/123121338/bf96d3ce-150f-47a2-a605-2efac2e0497b)
-
-Design Desktop:
-
-* [Wireframe desktop 1](https://github-production-user-asset-6210df.s3.amazonaws.com/92090/261137084-1625aeb8-883c-4b79-86da-5fab34fa5b88.png)
-* [Wireframe desktop 2](https://github-production-user-asset-6210df.s3.amazonaws.com/92090/261137087-6cef16bc-643a-4d6d-bc1c-e0daaeb21c88.png)
-
-## 5. Considerações Técnicas
-
-A lógica do projeto deve ser implementada completamente em JavaScript
-(ES6), HTML e CSS. Neste projeto, NÃO é permitido usar bibliotecas ou
-frameworks, apenas [JavaScript puro](https://medium.com/laboratoria-how-to/vanillajs-vs-jquery-31e623bbd46e),
-exceto bibliotecas para criação de gráficos (charts); veja a
-_seção opcional_](#7-hacker-edition) acima.
-
-O _boilerplate_ contém uma estrutura de arquivos como ponto de partida, bem
-como todas as configurações de dependências:
+O _boilerplate_ contém uma estrutura de arquivos como ponto de partida, bem como todas as configurações de dependências:
 
 ```text
 .
@@ -104,230 +98,79 @@ como todas as configurações de dependências:
    └── dataFunctions.spec.js
    └── tests-read-only
 ```
+### Scripts / arquivos implementados no desenvolvimento do projeto.
+
+Esta é uma estrutura clara e organizada, pois facilita o entendimento da navegação e escalabilidade do código. Além disso também seguiu o princípio de design de Separação de  responsabilidades no código, onde cada arquivo e pasta tem uma responsabilidade específica.
+
+Para melhor modulação do projeto os arquivos implementados foram distruídos da seguinte forma:
 
 ### `src/index.html`
 
-Como no projeto anterior, existe um arquivo `index.html`. Como já sabe,
-este é o arquivo que será exibido para a usuária. Também é útil para indicar
-quais scripts serão usados e para reunir tudo o que foi feito.
+Este é o arquivo que será exibido para a usuária. Também é útil para indicar quais scripts serão usados e para reunir tudo o que foi feito.
 
 ### `src/main.js`
 
-Recomendamos usar `src/main.js` para todo o seu código relacionado
-à exibição dos dados na tela. Basicamente, nos referimos à
-interação com o DOM. Operações como criação de nós, registro de
-manipuladores de eventos (_event listeners_ ou _event handlers_).
-
-Neste arquivo, você encontrará uma série de _imports_ prontos para _carregar_
-as diferentes fontes de dados.
-
-Por exemplo, os dados com os quais você irá trabalhar,
-serão encontrados na seguinte linha:
-
-```js
-import data from './data/dataset.js';
-```
+Arquivo utilizado para todo o código relacionado à exibição dos dados na tela, à interação com o DOM. 
 
 ### `src/dataFunctions.js`
 
-O cerne deste projeto é a manipulação de dados por meio de arrays
-e objetos.
-
-Este arquivo conterá toda a funcionalidade relacionada a obter,
-processar e manipular dados (suas funções). Por exemplo:
-
-* `filterData(data, filterBy, value)`: esta função recebe três parâmetros.
-  O primeiro parâmetro, `data`, fornece os dados.
-  O segundo parâmetro, `filterBy`, indica qual campo dos dados se
-  deseja filtrar.
-  O terceiro parâmetro, `value`, indica o valor do campo que se deseja filtrar.
-
-* `sortData(data, sortBy, sortOrder)`: esta função de classificação recebe
-  três parâmetros.
-  O primeiro parâmetro, `data`, fornece os dados.
-  O segundo parâmetro, `sortBy`, indica qual campo dos
-  dados se deseja ordenar.
-  O terceiro parâmetro, `sortOrder`, indica se a ordenação deve ser ascendente
-    ou descendente.
-
-* `computeStats(data)`: a função de cálculo nos permitirá realizar cálculos
-  estatísticos básicos para serem exibidos de acordo com os dados fornecidos;
-  esta função deve usar o método reduce.
-
-Essas funções devem ser [_puras_](https://medium.com/laboratoria-developers/introducci%C3%B3n-a-la-programaci%C3%B3n-funcional-en-javascript-parte-2-funciones-puras-b99e08c2895d)
-e independentes do DOM. Essas funções serão posteriormente utilizadas
-no arquivo `src/main.js`, ao carregar a página, e sempre que a usuária
-interagir (cliques, filtragens, ordenações, ...).
+Este arquivo contém toda a funcionalidade relacionada a obter, processar e manipular dados (suas funções). Essas funções são puras e independentes do DOM.
 
 ### `src/data`
 
-Nesta pasta, estão os dados com os quais você trabalhará (os dados de exemplo
-ou os dados que você gerará com a ajuda da inteligência artificial).
+Nesta pasta, estão os dados gerados com a ajuda da inteligência artificia, ChatGPT.
 
 ### `test/dataFunctions.spec.js`
 
-Neste arquivo, você fará testes unitários das funções
-implementadas no arquivo `dataFunctions.js`. (`filterBy`, `sortBy`, etc.)
+Neste arquivo, foi criado os testes unitários das funções
+implementadas no arquivo `dataFunctions.js`.
 
 ### `test/data.js`
 
-Neste arquivo, você pode construir e exportar dados "mock" para usar nos
-testes. É mais fácil testar um array de 5 elementos do que um array de 24,
-por isso você criará uma amostra dos dados que deseja testar. No mínimo,
-você deve exportar uma variável chamada `data`, mas pode definir e exportar
-mais se for necessário para seus testes.
+Amostra de dados para os testes.
 
 ### `src/view.js`
 
-Para obter uma melhor separação de responsabilidades no código, este
-arquivo deve conter todas as funções que serão usadas para renderizar
-os elementos dinamicamente.
+Este arquivo contém todas as funções que foram usadas para renderizar os elementos dinamicamente.
 
-Pelo menos uma função é obrigatória:
 
-* `renderItems(data)`: esta função recebe a matriz de dados para renderizar
-  os elementos de cada item e deve retornar um elemento DOM ou
-  uma string de HTML.
-
-Lembre-se que todas as funções encontradas neste arquivo devem ser
-exportadas para serem usadas em outros arquivos.
-
-Recomendamos esta estrutura que é clara e
-organizada para o projeto, pois facilita o entendimento da navegação e
-escalabilidade do código. Além disso também segue o princípio de design de
-[Separação de responsabilidades](https://dev.to/tamerlang/separation-of-concerns-the-simple-way-4jp2)
-no código, onde cada arquivo e pasta
-tem uma responsabilidade específica. A responsabilidade das funções em
-`view.js` serve para criar partes do DOM com os dados.
-
-Esta não é a única maneira de dividir seu código, você pode usar mais arquivos e
-pastas, desde que a estrutura seja clara para seus colegas.
-
-## 6. Critérios de aceitação mínimos do projeto
+## 4. Objetivos de Aprendizagem
 
 ### Critérios de código
 
-Com cada objetivo de aprendizagem, avaliamos se o código atende a alguns
-critérios. Isso não exclui que você possa usar outras opções, por exemplo,
-no caso dos seletores, sugerimos o uso de `querySelector`,
-mas isso não impede o uso de `querySelectorAll` ou `getElementById` também.
-
-Você pode executar os testes de cada grupo de objetivos
-de aprendizagem individualmente com os seguintes comandos:
-
-``` sh
-npm run test:oas-html
-npm run test:oas-css
-npm run test:oas-web-api
-npm run test:oas-js
-npm run test:oas-prompting
-npm run test:oas // Esto es para correr todos los tests de OAs
-```
-
-Nota: para que os testes funcionem corretamente, você precisa ter
-instalado o `Node.js (LTS)` com versão 14.0.0 ou superior. Para verificar
-a versão do node, execute `node -v` no terminal. Se o comando não
-não retorna nenhuma versão, você precisa instalá-la, para isso você pode baixá-la
-de seu [site oficial](https://nodejs.org/).
 
 #### HTML
 
 * **Uso de HTML semântico**
 
-  - [ ] Possui um `<header>` com um `<h1>`
-  - [ ] Possui um `<footer>`
-  - [ ] Possui um `<main>` com um `<h2>`
-  - [ ] Todos os elementos de controle (inputs, selects, radio, etc) possuem `<label>`
-  - [ ] Usa `<ul>` para renderizar os dados
-  - [ ] Os filhos de `<li>` usam os atributos de [microdados](https://recursivos.com/html/microdatos/) `itemscope` e `itemprop`
-
-Nota: Tenha em mente que para ter tags `<ul>` e `<li>` em seu projeto,
-É necessário que você já tenha dados criados, pois é a partir dos dados que você
-irá criar as listas.
-
 #### CSS
 
 * **Uso de seletores CSS**
-
-  - [ ] Uso de seletor de classe para os itens `<li>`
-  - [ ] Uso de flexbox em sentido `row` e `column`
-  - [ ] Uso de flexbox para o elemento que contém os itens
-  - [ ] Uso de flexbox para o elemento que contém os inputs UI
 
 #### Web APIs
 
 * **Uso de seletores do DOM**
 
-  - [ ] O aplicativo usa [`querySelector`](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector)
-    para buscar os elementos do DOM
-
-* **Manuseio de eventos do DOM (ouvintes, propagação, delegação)**
-
-  - [ ] `addEventListener` com um callback que possui o parâmetro de `event`,
-    permitindo o uso do objeto [`event`](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events#event_objects)
-    com `event.target` ou `event.currentTarget`
-  - [ ] O aplicativo registra [Event Listeners](https://developer.mozilla.org/en/docs/Web/API/EventTarget/addEventListener)
-    para escutar `click`, `change`, `keyup`, dependendo do evento que
-    deseja-se ouvir
+ * **Manuseio de eventos do DOM (ouvintes, propagação, delegação)**
 
 * **Manipulação dinâmica do DOM**
-
-  - [ ] O aplicativo atualiza o atributo [`innerHTML`](https://developer.mozilla.org/pt-BR/docs/Web/API/Element/innerHTML).
-  - [ ] O aplicativo usa `createElement` e `appendChild`, ou strings de modelo
-    para criar elementos
 
 #### JavaScript
 
 * **Variáveis (declaração, atribuição, escopo)**
 
-  - [ ] O aplicativo declara variáveis com [`let`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let)
-    e [`const`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const)
-    de maneira adequada
-
 * **Uso de condicionais (if-else, switch, operador ternário, lógica booleana)**
-
-  - [ ] O aplicativo usa o statement
-    [`if..else`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else)
-      para avaliar condições
 
 * **Uso de loops (while, for, for..of)**
 
-  - [ ] O aplicativo usa o statement [`for`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for)
-    ou o método [`forEach`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach)
-    para iteração
-
 * **Funções (parâmetros, argumentos, retorno)**
-
-  No arquivo `dataFunctions.js`, define as seguintes funções:
-  - [ ] uma função `sortBy` que possui 3 parâmetros (`data`, `sortBy`, `sortOrder`)
-    e retorna a matriz ordenada
-  - [ ] uma função `filterBy` que possui 3 parâmetros (`data`, `filterBy`, `value`)
-    e retorna a matriz filtrada
-  - [ ] uma função `computeStats` que possui pelo menos um parâmetro (`data`)
-    e retorna um valor computado
-
-  Mais sobre estes pontos na [seção dataFunctions.js](#src/dataFunctions.js)
 
 * **Arrays (arrays)**
 
-  - [ ] Uso de [Arrays](https://curriculum.laboratoria.la/pt/topics/javascript/04-arrays)
-  - [ ] Uso de [Array.prototype.sort() - MDN](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/sort)
-    ou [Array.prototype.toSorted - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/toSorted)
-  - [ ] Uso de [Array.prototype.forEach() - MDN](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach)
-  - [ ] Uso de [Array.prototype.map() - MDN](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
-  - [ ] Uso de [Array.prototype.filter() - MDN](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)
-  - [ ] Uso de [Array.prototype.reduce() - MDN](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce)
-
 * **Objetos**
-
-  - [ ] Uso de notação de ponto para [acessar propriedades](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Property_accessors)
-  - [ ] Uso de notação de colchetes para [acessar propriedades](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Property_accessors)
 
 * **Módulos ECMAScript (ES Modules)**
 
-  - [ ] O aplicativo usa [`import`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import)
-    e [`export`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/export)
-    para importar e exportar valores de um módulo JavaScript
 
 ### Critérios do Projeto
 
@@ -512,10 +355,7 @@ Lembre-se de solicitar feedback do seu protótipo às suas colegas e/ou coaches.
 
 #### Testes de usabilidade
 
-Durante o desafio, você deverá realizar testes de usabilidade com diferentes usuárias,
-e com base nos resultados, deverá iterar seus designs. Conte-nos
-quais problemas de usabilidade você identificou nos testes e como os
-melhorou em sua proposta final.
+Durante o desafio, você deverá realizar testes de usabilidade com diferentes usuárias, e com base nos resultados, deverá iterar seus designs. Conte-nos quais problemas de usabilidade você identificou nos testes e como os melhorou em sua proposta final.
 
 #### Implementação da Interface de Usuário (HTML/CSS/JS)
 
@@ -525,33 +365,6 @@ Seu tempo de hacking é limitado, então você terá que priorizar.
 
 Revise [as funcionalidades](#3-funcionalidades) que o projeto requer da interface.
 
-#### Testes unitários
-
-O _boilerplate_ deste projeto não inclui Testes Unitários, então
-você terá que escrevê-los para as funções responsáveis por _processar_,
-_filtrar_ e _ordenar_ os dados, bem como _calcular_ estatísticas.
-Este projeto utiliza o framework [Jest](https://jestjs.io/) para executar
-os testes unitários, então recomendamos que consulte sua documentação.
-
-Seus _testes unitários_ devem cobrir 70% das _declarações_
-(_statements_), _funções_ (_functions_), _linhas_ (_lines_), e _ramificações_
-(_branches_) do arquivo `src/dataFunctions.js` que contém suas funções e
-está detalhado na seção de [Considerações técnicas](#src/data.js).
-
-## 7. Edição Hacker
-
-As seções chamadas _Edição Hacker_ são **opcionais**. Se você **concluiu**
-tudo o que foi solicitado anteriormente e ainda tem tempo, tente completá-las.
-Isso permitirá que aprofundar e/ou praticar mais sobre os objetivos de
-aprendizado do projeto.
-
-Recursos/características adicionais sugeridos:
-
-* Visualizar a estatística calculada por meio de um gráfico. Para
-  isso, recomendamos explorar bibliotecas de gráficos como
-  [Chart.js](https://www.chartjs.org/)
-  ou [Google Charts](https://developers.google.com/chart/).
-* Cobertura de 100%
 
 ## 8. Objetivos de aprendizagem
 
@@ -559,216 +372,88 @@ Reflita e depois enumere os objetivos que quer alcançar e aplique no seu projet
 
 ### HTML
 
-- [ ] **Uso de HTML semântico**
-
-  <details><summary>Links</summary><p>
-
-  * [HTML semântico](https://curriculum.laboratoria.la/pt/topics/html/html5/semantic-html)
-  * [Semantics in HTML - MDN](https://developer.mozilla.org/en-US/docs/Glossary/Semantics#Semantics_in_HTML)
-</p></details>
+- **Uso de HTML semântico**
 
 ### CSS
 
-- [ ] **Uso de seletores de CSS**
+- **Uso de seletores de CSS**
 
-  <details><summary>Links</summary><p>
 
-  * [Intro a CSS](https://curriculum.laboratoria.la/pt/topics/css/css/intro-css)
-  * [CSS Selectors - MDN](https://developer.mozilla.org/pt_BR/docs/Web/CSS/CSS_Selectors)
-</p></details>
+- **Modelo de caixa (box model): borda, margem, preenchimento**
 
-- [ ] **Modelo de caixa (box model): borda, margem, preenchimento**
-
-  <details><summary>Links</summary><p>
-
-  * [Modelo de Caixa e Display](https://curriculum.laboratoria.la/pt/topics/css/css/boxmodel-and-display)
-  * [The box model - MDN](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model)
-  * [Introduction to the CSS box model - MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Model/Introduction_to_the_CSS_box_model)
-  * [CSS display - MDN](https://developer.mozilla.org/pt-BR/docs/Web/CSS/display)
-  * [display - CSS Tricks](https://css-tricks.com/almanac/properties/d/display/)
-</p></details>
-
-- [ ] **Uso de flexbox em CSS**
-
-  <details><summary>Links</summary><p>
-
-  * [A Complete Guide to Flexbox - CSS Tricks](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
-  * [Flexbox Froggy](https://flexboxfroggy.com/#pt-br)
-  * [Flexbox - MDN](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox)
-</p></details>
+- **Uso de flexbox em CSS**
 
 ### Web APIs
 
-- [ ] **Uso de seletores de DOM**
+-**Uso de seletores de DOM**
 
-  <details><summary>Links</summary><p>
 
-  * [Modificando o DOM](https://curriculum.laboratoria.la/pt/topics/browser/dom/1-dom-methods-selection)
-  * [Introdução ao DOM - MDN](https://developer.mozilla.org/pt-BR/docs/Web/API/Document_Object_Model/Introduction)
-  * [Locating DOM elements using selectors - MDN](https://developer.mozilla.org/en-US/docs/Web/API/Document_object_model/Locating_DOM_elements_using_selectors)
-</p></details>
+- **Manipulação de eventos de DOM (listeners, propagação, delegação)**
 
-- [ ] **Manipulação de eventos de DOM (listeners, propagação, delegação)**
+  
 
-  <details><summary>Links</summary><p>
-
-  * [Introdução a eventos - MDN](https://developer.mozilla.org/pt-BR/docs/Learn/JavaScript/Building_blocks/Events)
-  * [EventTarget.addEventListener() - MDN](https://developer.mozilla.org/pt-BR/docs/Web/API/EventTarget/addEventListener)
-  * [EventTarget.removeEventListener() - MDN](https://developer.mozilla.org/pt-BR/docs/Web/API/EventTarget/removeEventListener)
-  * [Objeto Event](https://developer.mozilla.org/pt-BR/docs/Web/API/Event)
-</p></details>
-
-- [ ] **Manipulação dinâmica de DOM**
-
-  <details><summary>Links</summary><p>
-
-  * [Introdução ao DOM](https://developer.mozilla.org/pt-BR/docs/DOM/Referencia_do_DOM/Introdu%C3%A7%C3%A3o)
-  * [Node.appendChild() - MDN](https://developer.mozilla.org/pt-BR/docs/Web/API/Node/appendChild)
-  * [Document.createElement() - MDN](https://developer.mozilla.org/pt-BR/docs/Web/API/Document/createElement)
-  * [Document.createTextNode()](https://developer.mozilla.org/pt-BR/docs/Web/API/Document/createTextNode)
-  * [Element.innerHTML - MDN](https://developer.mozilla.org/pt-BR/docs/Web/API/Element/innerHTML)
-  * [Node.textContent - MDN](https://developer.mozilla.org/pt-BR/docs/Web/API/Node/textContent)
-</p></details>
+- **Manipulação dinâmica de DOM**
 
 ### JavaScript
 
-- [ ] **Diferenciar entre tipos de dados primitivos e não primitivos**
+- **Diferenciar entre tipos de dados primitivos e não primitivos**
 
-- [ ] **Arrays (arranjos)**
+- **Arrays (arranjos)**
 
-  <details><summary>Links</summary><p>
+-**Objetos (key, value)**
 
-  * [Arranjos](https://curriculum.laboratoria.la/pt/topics/javascript/arrays)
-  * [Array - MDN](https://developer.mozilla.org//pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/)
-  * [Array.prototype.sort() - MDN](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/sort)
-  * [Array.prototype.forEach() - MDN](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach)
-  * [Array.prototype.map() - MDN](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
-  * [Array.prototype.filter() - MDN](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)
-  * [Array.prototype.reduce() - MDN](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce)
-</p></details>
+-**Variáveis (declaração, atribuição, escopo)**
 
-- [ ] **Objetos (key, value)**
+-**Uso de condicionais (if-else, switch, operador ternário, lógica booleana)**
 
-  <details><summary>Links</summary><p>
+- **Uso de laços (while, for, for..of)**
 
-  * [Objetos em JavaScript](https://curriculum.laboratoria.la/pt/topics/javascript/objects/objects)
-</p></details>
+-**Funções (params, args, return)**
 
-- [ ] **Variáveis (declaração, atribuição, escopo)**
+-**Testes unitários (unit tests)**
 
-  <details><summary>Links</summary><p>
+-**Módulos de ECMAScript (ES modules)**
 
-  * [Valores, tipos de dados e operadores](https://curriculum.laboratoria.la/pt/topics/javascript/basics/values-variables-and-types)
-  * [Variáveis](https://curriculum.laboratoria.la/pt/topics/javascript/basics/variables)
-</p></details>
+-**Uso de linter (ESLINT)**
 
-- [ ] **Uso de condicionais (if-else, switch, operador ternário, lógica booleana)**
+-**Uso de identificadores descritivos (Nomenclatura e Semântica)**
 
-  <details><summary>Links</summary><p>
-
-  * [Estruturas condicionais e repetitivas](https://curriculum.laboratoria.la/pt/topics/javascript/flow-control/conditionals-and-loops)
-  * [Tomando decisões no seu código — condicionais - MDN](https://developer.mozilla.org/pt-BR/docs/Learn/JavaScript/Building_blocks/conditionals)
-</p></details>
-
-- [ ] **Uso de laços (while, for, for..of)**
-
-  <details><summary>Links</summary><p>
-
-  * [Laços (Loops)](https://curriculum.laboratoria.la/pt/topics/javascript/flow-control/loops)
-  * [Laços e iterações - MDN](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Loops_and_iteration)
-</p></details>
-
-- [ ] **Funções (params, args, return)**
-
-  <details><summary>Links</summary><p>
-
-  * [Funções (controle de fluxo)](https://curriculum.laboratoria.la/pt/topics/javascript/flow-control/functions)
-  * [Funções clássicas](https://curriculum.laboratoria.la/pt/topics/javascript/functions/classic)
-  * [Arrow Functions](https://curriculum.laboratoria.la/pt/topics/javascript/functions/arrow)
-  * [Funções — blocos reutilizáveis de código - MDN](https://developer.mozilla.org/pt-BR/docs/Learn/JavaScript/Building_blocks/Functions)
-</p></details>
-
-- [ ] **Testes unitários (unit tests)**
-
-  <details><summary>Links</summary><p>
-
-  * [Introdução ao Jest - Documentação oficial](https://jestjs.io/docs/pt-BR/getting-started)
-</p></details>
-
-- [ ] **Módulos de ECMAScript (ES modules)**
-
-  <details><summary>Links</summary><p>
-
-  * [import - MDN](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Statements/import)
-  * [export - MDN](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Statements/export)
-</p></details>
-
-- [ ] **Uso de linter (ESLINT)**
-
-- [ ] **Uso de identificadores descritivos (Nomenclatura e Semântica)**
-
-- [ ] **Diferença entre expressões (expressions) e declarações (statements)**
+-**Diferença entre expressões (expressions) e declarações (statements)**
 
 ### Controle de Versões (Git e GitHub)
 
-- [ ] **Git: Instalação e configuração**
+-**Git: Instalação e configuração**
 
-- [ ] **Git: Controle de versão com git (init, clone, add, commit, status, push, pull, remote)**
+-**Git: Controle de versão com git (init, clone, add, commit, status, push, pull, remote)**
 
-- [ ] **Git: Integração de mudanças entre ramos (branch, checkout, fetch, merge, reset, rebase, tag)**
+-**Git: Integração de mudanças entre ramos (branch, checkout, fetch, merge, reset, rebase, tag)**
 
-- [ ] **GitHub: Criação de contas e repositórios, configuração de chave SSH**
+-**GitHub: Criação de contas e repositórios, configuração de chave SSH**
 
-- [ ] **GitHub: Implantação com GitHub Pages**
+- **GitHub: Implantação com GitHub Pages**
 
-  <details><summary>Links</summary><p>
-
-  * [Site oficial do GitHub Pages](https://pages.github.com/)
-</p></details>
-
-- [ ] **GitHub: Colaboração pelo Github (branches | forks | pull requests | code review | tags)**
+-**GitHub: Colaboração pelo Github (branches | forks | pull requests | code review | tags)**
 
 ### Centrado no usuário
 
-- [ ] **Desenhar e desenvolver um produto ou serviço colocando as usuárias no centro**
+- **Desenhar e desenvolver um produto ou serviço colocando as usuárias no centro**
 
 ### Design de produto
 
-- [ ] **Criar protótipos para obter feedback e iterar**
+- **Criar protótipos para obter feedback e iterar**
 
-- [ ] **Aplicar os princípios de desenho visual (contraste, alinhamento, hierarquia)**
+- **Aplicar os princípios de desenho visual (contraste, alinhamento, hierarquia)**
 
 ### Pesquisa
 
-- [ ] **Planejar e executar testes de usabilidade**
+- **Planejar e executar testes de usabilidade**
 
 ### AI Prompting
 
-- [ ] **Dando Instruções**
+- **Dando Instruções**
 
-  <details><summary>Links</summary><p>
+- **Few shot prompting**
 
-  * [Dando Instruções | Learn Prompting: Your Guide to Communicating with AI](https://learnprompting.org/pt/docs/basics/instructions)
-</p></details>
-
-- [ ] **Few shot prompting**
-
-  <details><summary>Links</summary><p>
-
-  * [Few shot prompting | Learn Prompting: Your Guide to Communicating with AI](https://learnprompting.org/es/docs/basics/few_shot)
-</p></details>
-
-## 9. Dicas, guias e leituras complementares
-
-### Primeiros Passos
-
-Junte-se ao canal Slack
-[#project-dataverse-pt](https://claseslaboratoria.slack.com/archives/C06BA7468AU)
-para conversar e pedir ajuda no projeto.
-
-Antes de começar a escrever código, você deve definir o que o
-produto deverá fazer com base no conhecimento que você pode obter da sua usuária.
-Estas perguntas podem te ajudar:
 
 * Quem são as principais usuárias do produto?
 * Quais são os objetivos dessas usuárias em relação ao produto?
@@ -781,120 +466,28 @@ Estas perguntas podem te ajudar:
   (primeira semana de trabalho). Mais dicas no guia de organização
   para o projeto.
 
-Quando estiver pronta para codificar, sugerimos que comece assim:
 
-1. Um dos membros da equipe deve fazer um :fork_and_knife:
-   [fork](https://help.github.com/articles/fork-a-repo/) do repositório da sua turma,
-   seus _coaches_ compartilharão um _link_ para um repositório e darão acesso
-   de leitura nesse repositório. O outro membro da equipe deve fazer um _fork_
-   **do repositório da colega** e
-   [configurar](https://gist.github.com/BCasal/026e4c7f5c71418485c1) um `remote`
-   para o mesmo.
-2. :arrow_down: [Clone](https://help.github.com/articles/cloning-a-repository/)
-   seu _fork_ para o seu computador (cópia local).
-3. 📦 Instale as dependências do projeto com o comando `npm install`. Isso
-   presume que você instalou o [Node.js](https://nodejs.org/) (que inclui [npm](https://docs.npmjs.com/)).
-4. Se tudo correr bem, você deverá conseguir executar os :traffic_light:
-   testes unitários (unit tests) com o comando `npm test`.
-5. Para ver a interface do seu programa no navegador, use o comando
-  `npm start` para iniciar o servidor web e acesse
-  `http://localhost:5000` no seu navegador.
-6. Vamos começar a codificar! :rocket:
+## 6. Testes
+Foram executados os testes de cada grupo de objetivos
+de aprendizagem individualmente com os seguintes comandos:
 
-### Conteúdo de Referência
+``` sh
+npm run test:oas-html
+npm run test:oas-css
+npm run test:oas-web-api
+npm run test:oas-js
+npm run test:oas-prompting
+npm run test:oas // Este é para rodar todos os testes de OAs.
+```
+#### Testes unitários
 
-#### Desenvolvimento Front-end
+O _boilerplate_ deste projeto não inclui Testes Unitários, então
+você terá que escrevê-los para as funções responsáveis por _processar_,
+_filtrar_ e _ordenar_ os dados, bem como _calcular_ estatísticas.
+Este projeto utiliza o framework [Jest](https://jestjs.io/) para executar
+os testes unitários, então recomendamos que consulte sua documentação.
 
-* [Tópicos no currículo da Laboratória](https://curriculum.laboratoria.la/pt/web-dev/topics)
-  testes, arrays, objetos, funções, DOM no JavaScript do navegador.
-* [Procurando elementos com querySelector*](https://javascript.info/searching-elements-dom)
-* [Objeto de evento](https://javascript.info/introduction-browser-events#objeto-del-evento)
-* [Array no MDN](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array)
-* [Array.sort no MDN](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/sort)
-* [Array.toSorted no MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/toSorted)
-* [Array.map no MDN](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
-* [Array.filter no MDN](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)
-* [Array.reduce no MDN](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce)
-* [Array.forEach no MDN](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach)
-* [Object.keys no MDN](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Object/keys)
-* [Object.entries no MDN](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Object/entries)
-* [Atributos de dados](https://developer.mozilla.org/pt-BR/docs/Learn/HTML/Howto/Use_data_attributes)
-* [expressions-vs-statements](https://2ality.com/2012/09/expressions-vs-statements.html)
-* [expressão vs declaração](https://openclassrooms.com/en/courses/4309531-descubre-las-funciones-en-javascript/5108986-diferencia-entre-expresion-y-sentencia)
-* [Dados atômicos vs dados estruturados](https://www.todojs.com/tipos-datos-javascript-es6/)
-* [Módulos: Export](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Statements/export)
-* [Módulos: Import](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Statements/import)
-* [Diferença entre array e objetos](https://youtu.be/mJJloQY7A8Y)
-* [Como percorrer um objeto?](https://youtube.com/01RHn23Bn_0)
-* [`map`, `filter`, `sort` e `reduce` também são métodos para objetos](https://youtu.be/bUl1R2lQvKo)
-* [Diferença entre expression e statements](https://youtu.be/wlukoWco2zk)
-* [Diferença entre createElement e innerHTML](https://www.javascripttutorial.net/javascript-dom/javascript-innerhtml-vs-createelement/)
-* [O que é o Escopo?](https://youtu.be/s-7C09ymzK8)
-
-#### Ferramentas
-
-* [Git](https://git-scm.com/)
-* [GitHub](https://github.com/)
-* [GitHub Pages](https://pages.github.com/)
-* [Para perguntas sobre Git recomendamos ver este playlist](https://www.youtube.com/watch?v=F1EoBbvhaqU&list=PLiAEe0-R7u8k9o3PbT3_QdyoBW_RX8rnV)
-* [Node.js](https://nodejs.org/)
-* [Jest](https://jestjs.io/)
-
-#### Organização do Trabalho
-
-* [Histórias de Usuário](https://www.youtube.com/watch?v=ky6wFiF5vMk&t=344s).
-  Atente-se que Cris não diferencia _Definição de Concluído_ de _Critérios de
-  Aceitação_ e nós sim faremos. Mais detalhes no guia.
-* [Como dividir as H.U.](https://www.youtube.com/watch?v=Ueq786iZ30I&t=341s)
-
-## 10. Considerações para pedir seu Feedback do Projeto
-
-Antes de agendar seu Feedback do Projeto com um coach, assegure-se de que seu projeto:
-
-* [ ] Cumpre todos os critérios mínimos de aceitação ao executar `npm run test:oas`
-* [ ] Cumpre todos os testes _end to end_ ao executar `npm run test:e2e`
-* [ ] Cumpre todos os testes unitários ao executar `npm run test` e
-  que têm uma cobertura de 70% de _statements_ (_sentenças_),
-  _functions_ (_funções_), _lines_ (_linhas_), e _branches_
-* [ ] Está livre de _erros_ de `eslint` ao executar `npm run pretest`
-* [ ] Está enviado no GitHub e publicado no GitHub Pages
-* [ ] Captura de tela do prompt utilizado para gerar os dados.
-* Tem um `README.md` com o seguinte:
-  - [ ] _Definição do produto_ clara e informativa
-  - [ ] Histórias de usuário
-  - [ ] Um _Design da Interface de Usuário_ (protótipo de alta fidelidade)
-  - [ ] A lista de problemas que você detectou por meio de testes
-    de usabilidade no `README.md`
-* Tem uma UI que cumpre as funcionalidades:
-  - [ ] Mostra lista com dados e/ou indicadores
-  - [ ] Permite ordenar dados por um ou mais campos (ascendente e descendente)
-  - [ ] Permite filtrar dados com base em uma condição
-  - [ ] Permite limpar os filtros com um botão
-  - [ ] É _responsiva_
-
-Lembre-se de fazer uma autoavaliação de _objetivos de aprendizado_ e
-_life skills_ a partir do seu painel do estudante.
-
-Se você não completou todos os itens acima, não consideramos que está pronta para
-sua sessão de Feedback do Projeto.
-
-## 11. Ferramentas utilizadas no projeto
-
-
-- **Visual Studio Code** - É um editor de código-fonte desenvolvido pela Microsoft para Windows, Linux e macOS. Ele inclui suporte para depuração, controle de versionamento Git incorporado, realce de sintaxe, complementação inteligente de código, snippets e refatoração de código. A escrita dos códigos ocorreu no VSCode.
-
-- **Git** - É um sistema de controle de versões distribuído, usado principalmente no desenvolvimento de software, mas pode ser usado para registrar o histórico de edições de qualquer tipo de arquivo.
-
-- **GitHub** - É uma plataforma de hospedagem de código-fonte e arquivos com controle de versão usando o Git. Ele permite que programadores, utilitários ou qualquer usuário cadastrado na plataforma contribuam em projetos privados e/ou Open Source de qualquer lugar do mundo.
-
-- **Bing** - É um mecanismo de busca criado pela Microsoft, também é uma ferramenta que gera imagens com inteligência artificial (IA) utiliza a tecnolocia do DALL-E 2 da OpenAI. Por meio dele foram geradas 24 imagens por IA relacionadas mulheres na área da tecnologia que foram utilizadas nos cards da aplicação.
-
-- **Notion** - É um aplicativo da web freemium para produtividade e anotações desenvolvido pela Notion Labs Inc. Ele oferece ferramentas organizacionais, incluindo gerenciamento de tarefas, rastreamento de projetos, listas de tarefas e marcadores. Utilizado como um importante instrumento de registro, como um diário de bordo nele foi transcrito o passo a passo do projeto.
-
-- **Trello** - É uma ferramenta visual que possibilita ao time o gerenciamento de qualquer tipo de projeto, fluxo de trabalho ou monitoramento de tarefas. É possível adicionar arquivos, checklists ou até mesmo automação: personalizar tudo para que o time trabalhe melhor. Foi a base para a organização e planejamento do backlog e gerenciamento do processo ao longo do projeto.
-
-- **ChatGPT** - É um chatbot online de inteligência artificial desenvolvido pela OpenA. O nome "ChatGPT" combina "Chat", referindo-se à sua funcionalidade de chatbot, e "GPT", que significa Generative Pre-trained Transformer, um tipo de modelo de linguagem grande. Com ele foi possível gerar os dados sobre as informações de cada uma das profissões selecionadas previamente para a aplicação.
-
-- **Canva** - É uma plataforma de design gráfico que permite aos usuários criar gráficos de mídia social, apresentações, infográficos, pôsteres e outros conteúdos visuais. Foi utilizado para a criação do protótipo de baixa fidelidade.
-
-- **Figma** - É um editor gráfico de vetor e prototipagem de projetos de design baseado principalmente no navegador web, com ferramentas offline adicionais para aplicações desktop para GNU/Linux, macOS e Windows. Utilizado para a criação do protótipo de alta fidelidade.
+Seus _testes unitários_ devem cobrir 70% das _declarações_
+(_statements_), _funções_ (_functions_), _linhas_ (_lines_), e _ramificações_
+(_branches_) do arquivo `src/dataFunctions.js` que contém suas funções e
+está detalhado na seção de [Considerações técnicas](#src/data.js).
