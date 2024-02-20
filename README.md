@@ -2,169 +2,51 @@
 
 ## Índice
 
-* [1. Preâmbulo](#1-preâmbulo)
-* [2. Resumo do projeto](#2-resumo-do-projeto)
-* [3. Considerações gerais](#3-considerações-gerais)
-* [4. Funcionalidades](#4-funcionalidades)
+* [1. Resumo do projeto](#2-resumo-do-projeto)
+* [2. Funcionalidades](#4-funcionalidades)
 * [5. Considerações técnicas](#5-considerações-técnicas)
 * [6. Critérios de aceitação mínimos do projeto](#6-critérios-de-aceitação-mínimos-do-projeto)
 * [7. Edição Hacker](#7-edição-hacker)
 * [8. Objetivos de aprendizagem](#8-objetivos-de-aprendizagem)
 * [9. Dicas, guias e leituras complementares](#9-dicas-guias-e-leituras-complementares)
 * [10. Considerações para pedir seu Feedback do Projeto](#10-considerações-para-pedir-seu-feedback-do-projeto)
+* [11. Ferramentas utilizadas no processo](#11-ferramentas-utilizadas-no-processo)
 
 ***
 
-## 1. Preâmbulo
+## 1. Resumo do projeto
 
-Segundo a [Forbes](https://www.forbes.com/sites/bernardmarr/2018/05/21/how-much-data-do-we-create-every-day-the-mind-blowing-stats-everyone-should-read),
-90% dos dados existentes hoje foram criados nos últimos dois anos.
-A cada dia, geramos 2,5 milhões de terabytes de dados, um número sem
-precedentes.
-
-No entanto, os dados por si só têm pouca utilidade. Para que essas grandes
+Atualmente há uma grande quantidade de dados produzidos, no entanto, os dados por si só têm pouca utilidade. Para que essas grandes
 quantidades de dados se transformem em **informação** fácil de ler para
 as usuárias, precisamos entender e processar esses dados. Uma maneira
 simples de fazer isso é criando _interfaces_ e _visualizações_.
 
-Na imagem a seguir, você poderá ver como, com os dados mostrados à esquerda,
-é possível construir uma interface amigável e compreensível para as usuárias,
-à direita.
+Neste projeto, foi **construído um _site_ para visualizar um
+_conjunto de dados_**. Para isso foi utilizado a ferramenta de inteligência artificial, o **ChatGPT** para gerar um banco de dados em um arquivo javascript, através do [prompting](https://chat.openai.com/share/ba46b56e-6b79-4fec-8b45-3b6c8f2aa134).
 
-![pokemon-data-to-ui](https://user-images.githubusercontent.com/12631491/218505816-c6d11758-9de4-428f-affb-2a56ea4d68c4.png)
+Como entrega final, oferecemos um site responsivo que permite **visualizar os dados,
+filtrá-los, ordená-los e calcular estatísticas**. 
 
-## 2. Resumo do projeto
+* Este projeto foi realizado em dupla por Camila Lara e Fabine Specian.
+* O tempo de conclusão do projeto foi de 6 Sprints.
+* O projeto foi publicado no [GitHub Pages](link do deploy).
 
-Neste projeto, você **construirá um _site_ para visualizar um
-_conjunto de dados_** que você irá gerar através do [prompting](https://www.itmadrid.com/que-es-un-prompt-en-inteligencia-artificial-ia/).
-Este site será adaptado para atender às necessidades que você
-descobrir que suas usuárias têm.
-
-Além disso, neste projeto, você utilizará ferramentas de
-[inteligência artificial](https://es.wikipedia.org/wiki/Inteligencia_artificial)
-como [ChatGPT](https://openai.com/chatgpt), [ExplainDev](https://explain.dev/),
-entre outras, para gerar um conjunto de dados em um arquivo javascript.
-
-O propósito de gerar os dados dessa maneira é oferecer a oportunidade
-de se envolver com o uso de ferramentas impulsionadas pela inteligência
-artificial, assim como com [técnicas de prompting](https://learnprompting.org/pt/docs/intro).
-
-Como entrega final, você terá um site que permitirá **visualizar os dados,
-filtrá-los, ordená-los e calcular estatísticas**. Por estatísticas,
-referimo-nos a diferentes cálculos que você pode fazer com os dados
-para mostrar informações ainda mais relevantes às usuárias (média,
-valor máximo ou mínimo, etc).
-
-## 3. Considerações gerais
-
-* Este projeto deve ser realizado em duplas.
-* O tempo estimado para concluir o projeto é de 4 a 5 Sprints.
-* O tempo estimado que você deve dedicar à [geração de dados](#geração-dos-dados)
-  é de no máximo dois dias. Além disso, no final do projeto, você deve
-  apresenta um [screenshot do prompt utilizado](#prompt-utilizado).
-* Se perceber que vai demorar mais tempo,
-  deverá usar os dados de exemplo que encontrará 
-  neste caminho: `./src/data/dataset.js`.
-* O projeto será entregue ao enviar seu código para o GitHub (commit/push) e a
-  interface será implantada usando o [GitHub Pages](https://pages.github.com/).
 
 ## 4. Funcionalidades
 
-Como entrega final, você terá um site que permitirá **visualizar os dados,
-filtrá-los, ordená-los e calcular estatísticas**.
+Aqui estão definidas com mais detalhes as funcionalidades que foram implementadas:
 
-Aqui estão definidas com mais detalhes as funcionalidades mínimas que devem ser
-implementadas:
+* A aplicação permite que a usuária veja os itens dos dados em uma visualização, em estilo de cartões.
 
-* A aplicação deve permitir que a usuária veja os itens dos dados em uma
-  visualização, que pode ser [tipo cartões](https://brasil.uxdesign.cc/https-brasil-uxdesign-cc-cards-boas-praticas-6ae813acf8cf)
-  ou qualquer outra forma que você decida como a mais apropriada
-  (mas a partir daqui chamamos os itens de "cartões"). **Cada um dos
-  cartões deve estar contido em um elemento `<li>` e estes, por sua vez,
-  contidos em um elemento `<ul>`.**
+* Os cartões destacam os valores das propriedades dos dados que a usuária deseja ver. Uma imagem, nome da profissão, descrição da profissão, formação sugerida, tech skills, soft skills e média salarial.
 
-* O elemento `<ul>` deve ser um filho de um elemento com o atributo _id_
-  com o valor "root". **Este é um passo importante para que sua**
-  **aplicação tenha a estrutura necessária.**
+* A aplicação calcula e exibe uma estatística dos dados.
 
-* Os cartões devem destacar os valores das propriedades dos dados que
-  interessariam à usuária ver. Por exemplo: nome, data, imagem, etc.
-  **Se você filtrar ou ordenar por uma propriedade, o cartão deve mostrar
-  o valor dessa propriedade para a usuária.**
-
-* A interface deve estruturar semanticamente os dados usando o padrão 
-  [microdados](https://developer.mozilla.org/en-US/docs/Web/HTML/Microdata).
-  É obrigatório usar pelo menos os atributos 
-  [`itemscope`](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/itemscope),
-  [`itemtype`](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/itemtype)
-  e o atributo 
-  [`itemprop`](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/itemprop).
-
-  Por exemplo, os seguintes dados correspondentes a Ada Lovelace:
-
-  ```json
-    {
-      "id": "ada-lovelace",
-      "name": "Ada Lovelace",
-      "shortDescription": "Pioneira da computação, foi a primeira programadora.",
-      "description": "Uma visionária do século XIX...",
-      "imageUrl": "URL_DA_IMAGEM_GERADA",
-      "facts": {
-        "yearOfBirth": 1843,
-        "placeOfBirth": "Londres, Inglaterra",
-        "mainField": "Ciência da Computação",
-      }
-    }
-  ```
-
-  podem ser estruturados semanticamente em HTML como:
-
-  ```html
-  <dl itemscope itemtype="MulheresNaTecnologia">
-    <img src="URL_DA_IMAGEM_GERADA" alt="Ada Lovelace" />
-    <dt>Nome:</dt><dd itemprop="name">Ada Lovelace</dd>
-    <dt>Descrição:</dt><dd itemprop="description">Pioneira da computação, foi a primeira programadora.</dd>
-    <dt>Ano de nascimento:</dt><dd itemprop="yearOfBirth">1843</dd>
-    <dt>Local de nascimento:</dt><dd itemprop="placeOfBirth">Londres, Inglaterra</dd>
-    <dt>Área principal:</dt><dd itemprop="mainField">Ciência da Computação</dd>
-  </dl>
-  ```
-
-* A aplicação deve calcular e exibir uma estatística dos dados. Pode
-  ser uma propriedade calculada de cada item, como uma propriedade adicional
-  (por exemplo, o índice de massa corporal de cada Pokémon) ou estatísticas
-  dos dados completos (por exemplo, total de pessoas nascidas nos anos 80).
-
-* A aplicação deve permitir à usuária filtrar os dados. Você usará
-  um elemento [`<select>`](https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/select)
-  com [um atributo de dados](https://developer.mozilla.org/pt-BR/docs/Learn/HTML/Howto/Use_data_attributes)
-  `data-testid="selecionar-filtro"`, e um atributo `name` com o nome
-  da propriedade pela qual irá filtrar (por exemplo, se for filtrar por "tipo",
-  o `<select>` terá `name="tipo"`). Os `<option>` deste `<select>` deverão
-  ter no atributo `value` o valor do filtro (por exemplo, se for filtrar
-  por tipo "fogo", seria `<option value="fogo">Fogo</option>`).
+* A aplicação deve permitir à usuária filtrar os dados. 
 
 * A aplicação deve permitir à usuária ordenar os dados.
-  - Terá pelo menos um controle `<select>` para ordenar.
-  - Se usar apenas um controle `<select>`, deve ter
-    [um atributo de dados](https://developer.mozilla.org/pt-BR/docs/Learn/HTML/Howto/Use_data_attributes)
-    `data-testid="selecionar-ordenar"` e um atributo `name` com o nome da
-    propriedade pela qual irá ordenar (por exemplo, se for ordenar por
-    "num" seria `name="num"`). Este `<select>` terá dois [`<option>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/option)
-    com `value` `asc` e `desc`, para ordenar de forma ascendente e descendente
-    respectivamente (por exemplo, `<option value="asc">A - Z</option>`).
-  - Uma alternativa é oferecer à usuária uma ordenação mais complexa.
-    Pode implementar a ordenação por várias propriedades. Neste caso, seria com
-    um `<select>` com um atributo de dados `data-testid="selecionar-ordenar"`,
-    e que contenha filhos `<option>` com um `value` com o nome da propriedade
-    pela qual irá ordenar. (Por exemplo, `<option value="nome">Nome</option>`).
-    Além disso, você precisará de outro controle (`<radio>`,`<select>`, etc.)
-    para indicar se a ordenação é ascendente ou descendente. Esse controle
-    secundário terá um atributo `name="ordem-ordenacao"`, e terá valores
-    `asc` e `desc`.
-
-* As funcionalidades de ordenação devem operar sobre os dados filtrados.
-  Por exemplo, se filtrar os Pokémons do tipo fogo e depois os ordenar por
+  
+* As funcionalidades de ordenação operam sobre os dados filtrados. Por exemplo, se filtrar as Profissões do tipo fogo e depois os ordenar por
   nome de forma ascendente, a aplicação deve manter o filtro aplicado e
   ordenar os Pokémons do tipo fogo.
 
@@ -995,3 +877,24 @@ _life skills_ a partir do seu painel do estudante.
 
 Se você não completou todos os itens acima, não consideramos que está pronta para
 sua sessão de Feedback do Projeto.
+
+## 11. Ferramentas utilizadas no projeto
+
+
+- **Visual Studio Code** - É um editor de código-fonte desenvolvido pela Microsoft para Windows, Linux e macOS. Ele inclui suporte para depuração, controle de versionamento Git incorporado, realce de sintaxe, complementação inteligente de código, snippets e refatoração de código. A escrita dos códigos ocorreu no VSCode.
+
+- **Git** - É um sistema de controle de versões distribuído, usado principalmente no desenvolvimento de software, mas pode ser usado para registrar o histórico de edições de qualquer tipo de arquivo.
+
+- **GitHub** - É uma plataforma de hospedagem de código-fonte e arquivos com controle de versão usando o Git. Ele permite que programadores, utilitários ou qualquer usuário cadastrado na plataforma contribuam em projetos privados e/ou Open Source de qualquer lugar do mundo.
+
+- **Bing** - É um mecanismo de busca criado pela Microsoft, também é uma ferramenta que gera imagens com inteligência artificial (IA) utiliza a tecnolocia do DALL-E 2 da OpenAI. Por meio dele foram geradas 24 imagens por IA relacionadas mulheres na área da tecnologia que foram utilizadas nos cards da aplicação.
+
+- **Notion** - É um aplicativo da web freemium para produtividade e anotações desenvolvido pela Notion Labs Inc. Ele oferece ferramentas organizacionais, incluindo gerenciamento de tarefas, rastreamento de projetos, listas de tarefas e marcadores. Utilizado como um importante instrumento de registro, como um diário de bordo nele foi transcrito o passo a passo do projeto.
+
+- **Trello** - É uma ferramenta visual que possibilita ao time o gerenciamento de qualquer tipo de projeto, fluxo de trabalho ou monitoramento de tarefas. É possível adicionar arquivos, checklists ou até mesmo automação: personalizar tudo para que o time trabalhe melhor. Foi a base para a organização e planejamento do backlog e gerenciamento do processo ao longo do projeto.
+
+- **ChatGPT** - É um chatbot online de inteligência artificial desenvolvido pela OpenA. O nome "ChatGPT" combina "Chat", referindo-se à sua funcionalidade de chatbot, e "GPT", que significa Generative Pre-trained Transformer, um tipo de modelo de linguagem grande. Com ele foi possível gerar os dados sobre as informações de cada uma das profissões selecionadas previamente para a aplicação.
+
+- **Canva** - É uma plataforma de design gráfico que permite aos usuários criar gráficos de mídia social, apresentações, infográficos, pôsteres e outros conteúdos visuais. Foi utilizado para a criação do protótipo de baixa fidelidade.
+
+- **Figma** - É um editor gráfico de vetor e prototipagem de projetos de design baseado principalmente no navegador web, com ferramentas offline adicionais para aplicações desktop para GNU/Linux, macOS e Windows. Utilizado para a criação do protótipo de alta fidelidade.
