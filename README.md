@@ -70,6 +70,7 @@ Como entrega final, oferecemos um site responsivo que permite **visualizar os da
 ## Prototipagem
 
 + Canva
+
 + Figma
 
 ## 3. Funcionalidades
@@ -78,7 +79,7 @@ Aqui estão definidas com mais detalhes as funcionalidades que foram implementad
 
 * A aplicação permite que a usuária veja os itens dos dados em uma visualização, em estilo de cartões.
 
-* Os 24 cartões contém dados que a usuária deseja ver referentess às carreiras de tecnologia: imagem, nome da profissão, descrição da profissão, formação sugerida, tech skills, soft skills e média salarial.
+* Os 24 cartões contém dados que a usuária deseja ver referentes às carreiras de tecnologia: imagem, nome da profissão, descrição da profissão, formação sugerida, tech skills, soft skills e média salarial.
 
 * A aplicação permite à usuária filtrar os dados por formação sugerida, apresentando 15 opções de graduações.
 
@@ -156,36 +157,113 @@ Este arquivo contém todas as funções que foram usadas para renderizar os elem
 
 ### 5. Tarefas
 
-#### Definição do produto
+### Definição do produto
 
-#### Histórias da usuária
+Ao escolher o tema da aplicação como **Carreiras da Tecnologia**, utilizando a plataforma Google Forms criamos uma pesquisa com o objetivo de identificar as necessidades e comportamentos das usuárias e assim dar início ao projeto. Após estrurutarmos o aplicamos com as colegas do bootcamp da Laboratoria e a partir dos resultados foi possível definir o produto.
 
-#### Critérios de aceitação
+Para acessar o formulário e os resultados encontrados na pesquisa, segue abaixo os links:
 
-#### Definições de pronto
+  - [Pesquisa](https://docs.google.com/forms/d/e/1FAIpQLSfW1AMcwUiMuEGCrD5PrDLqwqFVfK_Xo3Ftm7faFDwVz-6AGA/viewform)
 
-#### Geração de Imagens
+  - [Resultados](https://docs.google.com/forms/d/1veLrV2cApyycm1dLeNV_S2d_lruQx5QOBSzf_-1P9Zw/edit?ts=65a15994#responses)
 
-#### Geração dos dados - colocar o prompting 
+
+### Histórias da usuária
+
+Após definir o produto, ao escrever as histórias de usuário a dividimos em 5 tarefas que foram nomeadas como T00 e o número definido.
+
+História da usuária se estrutura com elementos Eu | Quero | Para.
+
+**EU** como estudante do bootcamp da área da tecnologia da Laboratoria:
+
+#### **T001**
+
+**Quero** carregar uma página com informações sobre **nome da profissão**, **descrição, soft skills, tech skills** e **média salarial** em formato de cards sobre as profissões de tecnologia. 
+
+**Para** ter um contexto geral das profissões e assim escolher qual profissão deseja se informar/escolher.
+
+
+#### **T002**
+
+**Quero** filtrar as profissões por Formação Sugerida. ****
+
+**Para** saber qual formação/curso de graduação devo escolher para a profissão de interesse.
+
+
+#### **T003**
+
+**Quero** poder ordenar as profissões por **Média salarial** apresentando a opção de organizar por forma *Crescente* (do mais baixo ao mais alto) e *Decrescente* (do mais alto ao mais baixo).
+
+**Para** compreender quais são as carreiras com os salários mais altos e baixos, considerando que o salário é um dos pontos para a escolha da profissão.
+
+#### **T004**
+
+**Quero** ver *estatísticas* sobre a quantidade de profissões/carreiras para quais uma graduação pode ser compatível.
+
+**Para** que eu reconheça quais as graduações que me dão maiores opções e possibilidades de profissões para seguir.
+
+#### **T005**
+
+**Quero** ter um botão limpar meus filtros, sem carregar uma nova página.
+
+**Para** que eu possa limpar meu filtro e escolher um outro quando desejar.
+
+### Critérios de aceitação
+
+Ligados as histórias e necessidades que a usuária precisa:
+
+- Aplicação apresenta 24 Profissões.
+    - Todas as imagens devem ter o mesmo tamanho.
+    - Todas devem apresentar uma imagem.
+    - Apresenta informações  **em cards **como: **imagem, nome da profissão, descrição, formação sugerida, tech skills, soft skills e média salarial.**
+
+- A usuária pode *filtrar* os dados por **Formação Sugerida,** com as opções**:** Graduação (Cursos).
+
+- A usuária pode *ordenar* os dados de **Média salarial** apresentando a opção de organizar por forma *Crescente* (do mais baixo ao mais alto) e *Decrescente* (do mais alto ao mais baixo).
+
+- A usuária pode *calcular estatísticas* sobre a quantidade de profissões/carreiras para quais uma graduação pode ser compatível.
+
+### Definições de pronto
+
+As definições de pronto aponta que todos os critérios de aceitação foram contemplados, considera que a usuária consegue executar todas ações.
+
+### Geração de Imagens
+
+Utilizando a plataforma Bing, foi possível por meio de comandos indicar quais imagens precisaíamos para a nossa aplicação.
+O padrão do comando foi: **Mulher** _característica física como cor de cabelo, etinia,condição, etc_ **na profissão de** _nome da profissão que desejada_. Ex:
+
+**_Mulher negra na profissão de Desenvolvedora Back-end._**
+
+### Geração dos dados 
 Descrição da tarefa...
+
 
 ![Demonstração prompting](src/assets/imagesReadme/Prompting.gif "Demonstração prompting")
 
 
 
-
-Estes dados serãoforam salvos em um arquivo JavaScript, que exporta
+Estes dados foram salvos em um arquivo JavaScript, que exporta
 uma matriz com 24 objetos. A estrutura de cada objeto é a seguinte:
 
 <img src="/src/assets/imagesReadme/ObjetoDataverse.jpg.jpg">
 
 
-#### Design de Interface de Usuário
+### Design de Interface de Usuário
 
 ##### Protótipo de baixa fidelidade
 
+<img src="/src/assets/imagesReadme/baixafidelidade.png">
+
+
 ##### Protótipo de alta fidelidade
 
+Modelo para desktop:
+
+<img src="/src/assets/imagesReadme/desktop.png">
+
+Modelo para mobile:
+
+<img src="/src/assets/imagesReadme/mobile.png">
 
 #### Testes de usabilidade
 
@@ -238,6 +316,8 @@ para garantir que todas as partes do sistema funcionem corretamente em conjunto.
 
 ## 7. Objetivos de Aprendizagem
 
+Critérios do código:
+
 #### HTML
 
 * **Uso de HTML semântico**
@@ -271,7 +351,7 @@ para garantir que todas as partes do sistema funcionem corretamente em conjunto.
 * **Módulos ECMAScript (ES Modules)**
 
 
-##  Objetivos de aprendizagem
+Critérios do Projeto:
 
 ### HTML
 
@@ -292,8 +372,6 @@ para garantir que todas as partes do sistema funcionem corretamente em conjunto.
 
 
 - **Manipulação de eventos de DOM (listeners, propagação, delegação)**
-
-  
 
 - **Manipulação dinâmica de DOM**
 
@@ -357,17 +435,6 @@ para garantir que todas as partes do sistema funcionem corretamente em conjunto.
 
 - **Few shot prompting**
 
-
-* Quem são as principais usuárias do produto?
-* Quais são os objetivos dessas usuárias em relação ao produto?
-* Quais são os dados mais relevantes que elas desejam ver na interface e por quê?
-* Quando elas usam ou usariam o produto?
-* Toda a sua pesquisa anterior deve resultar em todas as Histórias
-  de Usuária do seu projeto.
-* Não faça protótipos de alta fidelidade de todas as suas Histórias. Comece
-  somente pelos que são necessários para o seu Sprint 1
-  (primeira semana de trabalho). Mais dicas no guia de organização
-  para o projeto.
 
 ## 8. Considerações finais
 
