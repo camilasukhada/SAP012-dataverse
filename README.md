@@ -159,7 +159,7 @@ Este arquivo contém todas as funções que foram usadas para renderizar os elem
 
 ### Definição do produto
 
-Ao escolher o tema da aplicação como **Carreiras da Tecnologia**, utilizando a plataforma Google Forms criamos uma pesquisa com o objetivo de identificar as necessidades e comportamentos das usuárias e assim dar início ao projeto. Após estrurutarmos o aplicamos com as colegas do bootcamp da Laboratoria e a partir dos resultados foi possível definir o produto.
+Ao escolher o tema da aplicação como **Carreiras da Tecnologia**, utilizando a plataforma Google Forms criamos uma pesquisa com o objetivo de identificar as necessidades e comportamentos das usuárias e assim dar início ao projeto. Após estrurutarmos o aplicamos com as colegas do bootcamp da Laboratoria e a partir dos resultados foi possível definir o produto, uma aplicação destinada para mulheres que estão iniciando na carreira da tecnologia e buscam mais informações para se preparaem para o mercado de trabalho.
 
 Para acessar o formulário e os resultados encontrados na pesquisa, segue abaixo os links:
 
@@ -176,94 +176,81 @@ História da usuária se estrutura com elementos Eu | Quero | Para.
 
 **EU** como estudante do bootcamp da área da tecnologia da Laboratoria:
 
-#### **T001**
+#### **`T001`**
 
 **Quero** carregar uma página com informações sobre **nome da profissão**, **descrição, soft skills, tech skills** e **média salarial** em formato de cards sobre as profissões de tecnologia. 
 
 **Para** ter um contexto geral das profissões e assim escolher qual profissão deseja se informar/escolher.
 
 
-#### **T002**
+#### **`T002`**
 
-**Quero** filtrar as profissões por Formação Sugerida. ****
+**Quero** filtrar as profissões por Formação Sugerida. 
 
 **Para** saber qual formação/curso de graduação devo escolher para a profissão de interesse.
 
 
-#### **T003**
+#### **`T003`**
 
 **Quero** poder ordenar as profissões por **Média salarial** apresentando a opção de organizar por forma *Crescente* (do mais baixo ao mais alto) e *Decrescente* (do mais alto ao mais baixo).
 
 **Para** compreender quais são as carreiras com os salários mais altos e baixos, considerando que o salário é um dos pontos para a escolha da profissão.
 
-#### **T004**
+#### **`T004`**
 
 **Quero** ver *estatísticas* sobre a quantidade de profissões/carreiras para quais uma graduação pode ser compatível.
 
 **Para** que eu reconheça quais as graduações que me dão maiores opções e possibilidades de profissões para seguir.
 
-#### **T005**
+#### **`T005`**
 
 **Quero** ter um botão limpar meus filtros, sem carregar uma nova página.
 
 **Para** que eu possa limpar meu filtro e escolher um outro quando desejar.
 
-### Critérios de aceitação
 
-Ligados as histórias e necessidades que a usuária precisa:
+### Critérios de aceitação e Definições de pronto
 
-- Aplicação apresenta 24 Profissões.
-    - Todas as imagens devem ter o mesmo tamanho.
-    - Todas devem apresentar uma imagem.
-    - Apresenta informações  **em cards **como: **imagem, nome da profissão, descrição, formação sugerida, tech skills, soft skills e média salarial.**
+Trabalhamos com os conceitos de critérios de aceitação e definição de pronto que estão detalhados [aqui](https://brawny-coyote-859.notion.site/DATAVERSE-288dc371330d4347a2cdaecd93702fc2).
 
-- A usuária pode *filtrar* os dados por **Formação Sugerida,** com as opções**:** Graduação (Cursos).
-
-- A usuária pode *ordenar* os dados de **Média salarial** apresentando a opção de organizar por forma *Crescente* (do mais baixo ao mais alto) e *Decrescente* (do mais alto ao mais baixo).
-
-- A usuária pode *calcular estatísticas* sobre a quantidade de profissões/carreiras para quais uma graduação pode ser compatível.
-
-### Definições de pronto
-
-As definições de pronto aponta que todos os critérios de aceitação foram contemplados, considera que a usuária consegue executar todas ações.
 
 ### Geração de Imagens
 
-Utilizando a plataforma Bing, foi possível por meio de comandos indicar quais imagens precisaíamos para a nossa aplicação.
+Utilizando a plataforma Bing, foi possível por meio de técnicas de prompting indicar quais imagens precisaríamos para a nossa aplicação.
 O padrão do comando foi: **Mulher** _característica física como cor de cabelo, etinia,condição, etc_ **na profissão de** _nome da profissão que desejada_. Ex:
 
 **_Mulher negra na profissão de Desenvolvedora Back-end._**
 
 ### Geração dos dados 
-Descrição da tarefa...
+
+Por meio de Inteligência Artificial, ChatGPT foram gerados os dados utilizados no projeto. 
 
 
 ![Demonstração prompting](src/assets/imagesReadme/Prompting.gif "Demonstração prompting")
 
 
-
 Estes dados foram salvos em um arquivo JavaScript, que exporta
 uma matriz com 24 objetos. A estrutura de cada objeto é a seguinte:
 
-<img src="/src/assets/imagesReadme/ObjetoDataverse.jpg.jpg">
+<img src="/src/assets/imagesReadme/ObjetoDataverse.jpg">
 
 
 ### Design de Interface de Usuário
 
 ##### Protótipo de baixa fidelidade
 
-<img src="/src/assets/imagesReadme/baixafidelidade.png">
+<img align="center" src="/src/assets/imagesReadme/baixafidelidade.png">
 
 
 ##### Protótipo de alta fidelidade
 
 Modelo para desktop:
 
-<img src="/src/assets/imagesReadme/desktop.png">
+<img align="center" src="/src/assets/imagesReadme/desktop.png">
 
 Modelo para mobile:
 
-<img src="/src/assets/imagesReadme/mobile.png">
+<img align="center" src="/src/assets/imagesReadme/mobile.png">
 
 #### Testes de usabilidade
 
