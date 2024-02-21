@@ -237,20 +237,20 @@ uma matriz com 24 objetos. A estrutura de cada objeto é a seguinte:
 
 ### Design de Interface de Usuário
 
-##### Protótipo de baixa fidelidade
+#### Protótipo de baixa fidelidade
 
-<img align="center" src="/src/assets/imagesReadme/baixafidelidade.png">
+<img src="/src/assets/imagesReadme/baixafidelidade.png" style="display: block; margin: 0 auto;">
 
 
-##### Protótipo de alta fidelidade
+#### Protótipo de alta fidelidade
 
 Modelo para desktop:
 
-<img align="center" src="/src/assets/imagesReadme/desktop.png">
+<img src="/src/assets/imagesReadme/desktop.png" style="display: block; margin: 0 auto;">
 
 Modelo para mobile:
 
-<img align="center" src="/src/assets/imagesReadme/mobile.png">
+<img src="/src/assets/imagesReadme/mobile.png" style="display: block; margin: 0 auto;">
 
 #### Testes de usabilidade
 
@@ -390,37 +390,13 @@ Critérios do Projeto:
 
 ### Controle de Versões (Git e GitHub)
 
--**Git: Instalação e configuração**
-
 -**Git: Controle de versão com git (init, clone, add, commit, status, push, pull, remote)**
 
 -**Git: Integração de mudanças entre ramos (branch, checkout, fetch, merge, reset, rebase, tag)**
 
--**GitHub: Criação de contas e repositórios, configuração de chave SSH**
-
 - **GitHub: Implantação com GitHub Pages**
 
 -**GitHub: Colaboração pelo Github (branches | forks | pull requests | code review | tags)**
-
-### Centrado no usuário
-
-- **Desenhar e desenvolver um produto ou serviço colocando as usuárias no centro**
-
-### Design de produto
-
-- **Criar protótipos para obter feedback e iterar**
-
-- **Aplicar os princípios de desenho visual (contraste, alinhamento, hierarquia)**
-
-### Pesquisa
-
-- **Planejar e executar testes de usabilidade**
-
-### AI Prompting
-
-- **Dando Instruções**
-
-- **Few shot prompting**
 
 
 ## 8. Considerações finais
