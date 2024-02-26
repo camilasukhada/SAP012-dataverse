@@ -1,50 +1,67 @@
-
-.flex-center{
+.flex-center {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-.justify-align, .estatistica{
+.justify-align,
+.estatistica {
     justify-content: center;
     text-align: center;
 }
 
 .font-size {
-    font-size:15px;
+    font-size: 15px;
 }
 
-header, footer{
+header,
+footer {
     text-align: right;
 }
 
-header, footer, li.container_itens{
-    background-color:#e0cede5c;
+header,
+footer,
+li.container_itens {
+    background-color: #cebdcc5c;
 }
 
-body, .comandos, .estatistica {
-color: #322d37;
+body,
+.comandos,
+.estatistica {
+    color: #322d37;
 }
 
-select, #reset-button {
+select,
+#reset-button {
     height: 35px;
-    cursor:pointer;
+    cursor: pointer;
     border-radius: 10px;
-    font-size:15px;
+    font-size: 15px;
 }
 
-li.container_itens, .comandos {
+li.container_itens,
+.comandos {
     padding: 20px;
 }
 
-header, .comandos, .container_itens dd[itemprop="name"], dt, .estatistica{
+header,
+.comandos,
+.container_itens dd[itemprop="name"],
+dt,
+.estatistica {
     font-weight: bold;
     margin-top: 10px;
 }
 
-dd, dt {
+dd,
+dt {
     margin: 0px;
     text-align: left;
+}
+
+header,
+li.container_itens {
+    border-radius: 50px;
 }
 
 header {
@@ -53,10 +70,10 @@ header {
     flex-wrap: wrap;
     justify-content: right;
     align-items: baseline;
-    height:fit-content;
-    border-radius: 50px;
+    height: fit-content;
 }
-h1{
+
+h1 {
     font-size: 90px;
 }
 
@@ -66,24 +83,24 @@ header img {
     padding-right: 20px;
 }
 
-h2{
+h2 {
     text-align: center;
 }
 
 body {
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-main{
-  display: flexbox;  
+main {
+    display: flexbox;
 }
 
 .comandos {
-    font-size:20px;
+    font-size: 20px;
 }
 
 select {
-    background-color:#d9d9d926;
+    background-color: #d9d9d926;
     width: 210px;
     border-style: dashed;
     margin-right: 15px;
@@ -92,24 +109,23 @@ select {
 
 #reset-button {
     background-color: #322d37;
-    color:#e0cede;
+    color: #e0cede;
     font-weight: bold;
     width: 150px;
     border: none;
 }
 
-ul{
+ul {
     padding: 0px;
 }
 
 li.container_itens {
     margin: 20px;
     width: 300px;
-    border-radius: 50px;
     display: flex;
 }
 
-dl{
+dl {
     display: inline-flex;
     flex-direction: column;
 }
@@ -119,45 +135,51 @@ dl img {
     height: 150px;
 }
 
-dt{
-    font-size:larger;
+dt {
+    font-size: larger;
 }
 
 .container_itens dd[itemprop="name"] {
     font-size: 25px;
 }
 
-.container_itens dd[itemprop="shortDescription"]{
+.container_itens dd[itemprop="shortDescription"] {
     margin-bottom: 15px;
     margin-top: 15px;
 }
 
 footer {
-    height:fit-content;
+    height: 40px;
+    ;
+    align-items: center;
     padding-right: 15px;
+    padding-top: 3px;
+    padding-bottom: 15px;
     margin-top: 40px;
-   
+    font-weight: bold;
+    border-radius: 10px;
+
 }
 
-@media (max-width:450px){
-    
-    header{
+@media (max-width:450px) {
+
+    header {
         justify-content: center;
     }
-    
-    header img{
+
+    header img {
         display: none;
     }
 }
 
-@media (max-width:700px){
+@media (max-width:700px) {
 
     .comandos {
         flex-direction: column;
-        align-items: center; 
-    }      
+        align-items: center;
+    }
 
-    #reset-button{
+    #reset-button {
         margin-top: 10px;
 
     }
@@ -165,20 +187,20 @@ footer {
     h1 {
         font-size: 40px;
     }
-    
+
     header img {
         max-height: 100px;
-    } 
-} 
+    }
+}
 
-@media (max-width: 1050px) and (min-width: 700px){
+@media (max-width: 1050px) and (min-width: 700px) {
 
     .comandos {
         flex-direction: column;
-        align-items: center; 
-    }      
+        align-items: center;
+    }
 
-    #reset-button{
+    #reset-button {
         margin-top: 10px;
 
     }
@@ -186,9 +208,8 @@ footer {
     h1 {
         font-size: 70px;
     }
-    
+
     header img {
         max-height: 150px;
-    } 
-} 
-
+    }
+}

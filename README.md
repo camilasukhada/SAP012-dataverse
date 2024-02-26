@@ -32,7 +32,7 @@ Como entrega final, oferecemos um site responsivo que permite **visualizar os da
 - O principal objetivo desse projeto é a aprendizagem e o desenvolvimento de habilidades técnicas e softskills.
 - Não foi permitido o uso de frameworks de CSS (Bootstrap, Materialize, etc).
 - O tempo de conclusão do projeto foi de 6 Sprints.
-- O projeto foi publicado no [GitHub Pages](https://fabinespecian.github.io/SAP012-dataverse/
+- O projeto foi publicado no [GitHub Pages](https://camilasukhada.github.io/SAP012-dataverse//
 ).
 
 ## 2. Ferramentas utilizadas
@@ -395,7 +395,7 @@ Critérios do Projeto:
 
 -**Git: Integração de mudanças entre ramos (branch, checkout, fetch, merge, reset, rebase, tag)**
 
-- **GitHub: Implantação com [GitHub Pages](https://fabinespecian.github.io/SAP012-dataverse/
+- **GitHub: Implantação com [GitHub Pages](https://camilasukhada.github.io/SAP012-dataverse//
 )**
 
 -**GitHub: Colaboração pelo Github (branches | forks | pull requests | code review | tags)**

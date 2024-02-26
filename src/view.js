@@ -17,14 +17,14 @@ export const renderItems = (data) => {
   </div>
  `;
   })
-  itens.className="flex-center";
+  itens.className = "flex-center";
   return itens;
 };
 
 export const renderStatsMessage = (count) => {
   const statsMessage = document.createElement('div');
   statsMessage.textContent = `Exibindo ${count} carreira(s) relacionada(s) a essa formação:`;
-  statsMessage.className="estatistica";
+  statsMessage.className = "estatistica";
   return statsMessage;
 };
 
